@@ -211,12 +211,20 @@ body {
 .sosmed-icons {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
-.sosmed-icons img {
-    width: 18px;
-    height: 18px;
-    filter: invert(1); 
+.sosmed-icons img, 
+.sosmed-icons svg {
+    height: 24px;
+    width: auto;
+    fill: #ffffff;
+}
+
+.sosmed-icons a:hover img, 
+.sosmed-icons a:hover svg {
+    opacity: 0.7;
+    transition: opacity 0.3s;
 }
 
 @media (max-width: 900px) {
