@@ -131,6 +131,7 @@ footer {
 .footer-left .btn:hover {
   background: var(--color-teks);
   transform: translateY(-2px);
+  color: rgb(68, 68, 68)
 }
 /* Copyright */
 
