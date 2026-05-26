@@ -5,71 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link CDN Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <!-- link style footer -->
-    <link rel="stylesheet" href="/aksesPedia/src/style/components/footer.css">
-
-    <!-- link font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/style/components/footer.css">
+
+    <title>Footer</title>
 </head>
 
-<body>
-    <footer class="bg-dark text-light pt-4">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- footer atas -->
-                <div class="col-md-6 mb-3">
-                    <div class="d-flex align-items-center mb-2">
-                        <img src="logo.png" alt="ksesPedia Logo" class="me-2" style="height:40px;">
-                        <h5 class="mb-0">ksesPedia</h5>
-                    </div>
-                    <p class="small">
-                        Menghapus sekat digital, merayakan kesetaraan informasi lewat suara.
-                    </p>
-                    <a href="#" class="btn btn-light btn-sm">Panduan Pengguna</a>
+<body class="container-sm">
+
+    <footer class="">
+
+        <!-- TOP -->
+        <div class="footer-top">
+
+            <!-- LEFT -->
+            <div class="footer-left">
+
+                <div class="logo">
+                    <img src="/src/assets/logo/logo.png" alt="Logo">
+                    <h5>ksesPedia</h5>
                 </div>
 
-                <!-- navigasi -->
-                <div class="col-md-6 mb-3">
-                    <ul class="nav justify-content-md-end flex-column flex-md-row">
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Beranda</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Hubungi Kami</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Berita</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Tentang Kami</a></li>
-                    </ul>
-                </div>
+                <p>
+                    Menghapus sekat digital, merayakan kesetaraan informasi lewat suara.
+                </p>
+
+                <a href="#" class="btn">Panduan Pengguna</a>
+
             </div>
 
-            <!-- link button-->
-            <div class="row border-top pt-3 ">
-                <div class="col-md-6">
-                    <p class="small mb-0">Copyright 2026 | All Rights Reserved</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
-                </div>
+            <!-- MENU -->
+            <div class="footer-menu">
+
+                <a href="#">Beranda</a>
+                <a href="#">Berita</a>
+                <a href="#">Hubungi Kami</a>
+                <a href="#">Tentang Kami</a>
+
             </div>
+
         </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+
+            <p>Copyright 2026 | All Rights Reserved</p>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
     </footer>
 
 </body>
-
-<!-- link CDN Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
 
 </html>
