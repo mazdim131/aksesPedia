@@ -1,0 +1,4 @@
+.container-fluid {
+    background-color: var(--bg-element) !important;
+    padding: 10px;
+}
