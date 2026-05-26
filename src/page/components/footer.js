@@ -6,7 +6,7 @@ footer.innerHTML = `        <!-- atas -->
             <!-- kiri -->
             <div class="footer-left">
 
-                <div class="logo">
+                <div class="logo d-flex" >
                     <img src="/src/assets/logo/logo.png" alt="Logo">
                     <h5>ksesPedia</h5>
                 </div>
