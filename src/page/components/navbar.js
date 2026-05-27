@@ -60,27 +60,6 @@ bilahNavigasi.innerHTML = `
               </div>
             </div>
 
-            <hr class="text-muted opacity-25 my-3">
-
-            <div class="mb-4">
-              <div class="d-flex justify-content-between align-items-center mb-2 pemicu-akordion" style="cursor: pointer;">
-                <div class="d-flex align-items-center gap-2 text-dark">
-                  <span class="fs-5 fw-bold leading-none">Aa</span>
-                  <span class="fw-bold">Ubah Ukuran Teks</span>
-                </div>
-                <i class="bi bi-chevron-down text-muted small ikon-panah"></i>
-              </div>
-              
-              <div id="kontenTeks" class="konten-akordion ps-2 mt-3">
-                <input type="range" class="form-range slider-rentang-kustom mb-4" min="12" max="24" value="16" id="sliderTeks">
-                <div class="d-flex justify-content-center align-items-center bungkus-hitung-teks mx-auto">
-                  <button type="button" class="btn tombol-hitung" id="tombolKurang">&minus;</button>
-                  <span class="nilai-hitung-teks" id="indikatorUkuranTeks">16</span>
-                  <button type="button" class="btn tombol-hitung" id="tombolTambah">&plus;</button>
-                </div>
-              </div>
-            </div>
-
             <button type="button" class="btn tombol-terapkan w-100 fw-bold py-3 rounded-3" id="tombolTerapkan">
               Terapkan
             </button>
