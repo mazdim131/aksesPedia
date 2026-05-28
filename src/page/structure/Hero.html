@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akses Pedia | Hero</title>
+
+    <!-- css global -->
+    <link rel="stylesheet" href="/src/style/global.css">
+    <!-- css component navbar -->
+    <link rel="stylesheet" href="/src/style/components/navbar.css">
+    <!-- css component footer -->
+    <link rel="stylesheet" href="/src/style/components/footer.css">
+    <!-- css index -->
+    <link rel="stylesheet" href="/src/style/Hero.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CDN Bootstrap Component -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CDN Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="container-sm">
+    <header>
+        <navbar id="navbar"></navbar>
+    </header>
+
+    <main>
+        <div id="main">
+            <!-- =============================================
+       1. HERO SECTION
+       ============================================= -->
+            <section class="hero" id="hero">
+                <div class="hero__inner">
+
+                    <!-- Konten teks kiri -->
+                    <div class="hero__content">
+                        <span class="hero__tag" id="heroTag"></span>
+                        <h1 class="hero__title" id="heroTitle"></h1>
+                        <p class="hero__desc" id="heroDesc"></p>
+                        <a class="hero__btn" id="heroBtn" href="#">Lihat Lebih Banyak</a>
+                    </div>
+
+                    <!-- Gambar kanan -->
+                    <div class="hero__image-wrap">
+                        <img class="hero__image" id="heroImage" src="" alt="" />
+                    </div>
+
+                </div>
+
+                <!-- Link kecil di bawah hero -->
+                <div class="hero__links" id="heroLinks">
+                    <!-- Diisi JS -->
+                </div>
+            </section>
+
+
+            <!-- =============================================
+       2. TRENDING SECTION
+       ============================================= -->
+            <section class="trending" id="trendingSection">
+                <div class="container">
+                    <h2 class="trending__heading">Trending</h2>
+                    <div class="trending__list" id="trendingList">
+                        <!-- Diisi JS (01-05) -->
+                        <!-- Di mobile hanya 01-02 yang tampil -->
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- =============================================
+       3. TAGLINE SECTION
+       ============================================= -->
+            <section class="tagline" id="taglineSection">
+                <div class="container tagline__inner">
+                    <h2 class="tagline__title" id="taglineTitle"></h2>
+                    <p class="tagline__subtitle" id="taglineSubtitle"></p>
+                </div>
+            </section>
+
+
+            <!-- =============================================
+       4. BERITA UTAMA (2 kolom: grid kiri + list kanan)
+       ============================================= -->
+            <section class="berita" id="beritaSection">
+                <div class="container berita__wrapper">
+
+                    <!-- Kolom Kiri: Jelajahi Berita -->
+                    <!-- Di mobile: HIDDEN -->
+                    <div class="berita__kiri" id="beritaKiri">
+                        <div class="berita__kiri-header">
+                            <h3 class="berita__section-title">Jelajahi Berita Inklusif Hari Ini</h3>
+                        </div>
+                        <div class="berita__grid" id="jelajahiGrid">
+                            <!-- Diisi JS (card besar) -->
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan: Pilihan Reaksi -->
+                    <!-- Di mobile: TAMPIL PENUH -->
+                    <div class="berita__kanan" id="beritaKanan">
+                        <div class="berita__kanan-header">
+                            <h3 class="berita__section-title">Pilihan Reaksi</h3>
+                        </div>
+                        <div class="reaksi__list" id="reaksiList">
+                            <!-- Diisi JS (card kecil vertikal) -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- JS Hero -->
+    <script src="/src/page/content/Hero.js"></script>
+    <script src="/src/page/content/beritaHero.js"></script>
+    <!-- JS component navbar -->
+    <script src="/src/page/components/navbar.js"></script>
+    <!-- JS component footer -->
+    <script src="/src/page/components/footer.js"></script>
+</body>
+
+</html>
