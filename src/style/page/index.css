@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap");
+
+body {
+  background-color: var(--bg-body) !important;
+}
+
+/* ==== Bagian Hero Container ==== */
+.container-hero {
+  padding: 50px 50px 50px 50px;
+  margin-top: 5%;
+  background-color: #06152d;
+  border-radius: 10px 100px 10px 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.hero-description {
+  color: white !important;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.badge-custom-cta {
+  background-color: #ffffff;
+  border-radius: 100px;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.badge-custom-cta:hover {
+  transform: scale(1.02);
+}
+
+.badge-inner-dark {
+  background-color: #6e6e6e;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 100px;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+.badge-text-action {
+  color: #06152d;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 16px 0 12px;
+  white-space: nowrap;
+}
+
+.btn-hero-option .btn-primary-custom {
+  background-color: #0d6efd;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 28px;
+  transition: background 0.2s;
+}
+
+.btn-hero-option .btn-primary-custom:hover {
+  background-color: #0b5ed7;
+  color: white !important;
+}
+
+.btn-hero-option .btn-light-custom {
+  background-color: #ffffff;
+  color: #06152d;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 28px;
+}
+
+.btn-hero-option .btn-light-custom:hover {
+  color: white !important;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  align-self: flex-end;
+  padding-top: 40px;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  display: block;
+  margin-top: auto;
+}
+
+@media (max-width: 991.98px) {
+  .container-hero {
+    margin-top: 20%;
+    border-radius: 10px 50px 10px 50px;
+    padding: 20px !important;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-image-wrapper {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .hero-img {
+    display: none;
+  }
+  .badge-custom-cta {
+    width: 310px;
+  }
+}
+
+/* ==== bagian grid berita ==== */
+.badge-category {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.bg-dark-navy {
+  background-color: #06152d;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.featured-img {
+  object-fit: cover;
+  height: 440px;
+  transition: transform 0.5s ease;
+}
+
+.featured-card:hover .featured-img {
+  transform: scale(1.03);
+}
+
+.img-news-right:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.03);
+}
+
+.badge-floating-title {
+  font-size: 18px;
+  color: #000000;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.featured-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.featured-desc {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.side-news-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #000000;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #8c8c8c !important;
+}
+
+.brand-logo img {
+  height: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .featured-title {
+    font-size: 24px;
+  }
+  .featured-img {
+    height: 300px;
+  }
+  .news-side-list {
+    margin-top: 20px;
+  }
+}
+
+/* ==== bagian container kategori berita ==== */
+.container-category {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-top: 5%;
+  background-color: #06152d; /* Warna Navy pekat sesuai gambar */
+  padding: 60px 40px;
+  border-radius: 40px 40px 100px 40px; /* Sudut melengkung asimetris khas di kiri bawah */
+}
+
+.badge-hot-news {
+  background-color: #ffffff;
+  color: #06152d;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.category-subtitle {
+  color: #a0aec0;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    minmax(0, 1fr)
+  ); /* Mengubah pembagi kolom utama menjadi 4 */
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 35px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  aspect-ratio: 1 / 1;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+  background-color: #06152d;
+  color: #ffffff;
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.card-label {
+  color: #06152d;
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .container-category {
+    border-radius: 10px 50px 10px 50px;
+    padding: 50px 20px 60px 20px !important;
+  }
+
+  .category-title {
+    font-size: 2rem;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .category-card {
+    padding: 25px 10px;
+  }
+}
+
+/* ==== bagian card swipper ==== */
+.news-swiper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px; /* Memberi ruang untuk pagination di bawah */
+}
+
+/* 2. Paksa wrapper Swiper berjejer horizontal murni */
+.news-swiper .swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+
+/* 3. Atur slide agar tingginya rata secara otomatis */
+.news-swiper .swiper-slide {
+  height: auto !important;
+  flex-shrink: 0;
+}
+
+.news-swiper .swiper-pagination-bullet-active {
+  background: var(--color-body-text);
+}
+
+.news-card h3 {
+  color: var(--color-card-text) !important;
+}
+
+/* 4. Modifikasi width pada news-card Anda */
+.news-card {
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  /* PERUBAHAN DISINI: Jangan dikunci ke 100%, biarkan inherit/fill */
+  width: 100% !important;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-date {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.card-body-custom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title-custom {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #0f172a;
+  margin-bottom: 8px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  min-height: 44.8px;
+}
+
+.card-tag {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.bi-play-fill {
+  color: var(--icon-play);
+}
+
+.icon-play {
+  width: 32px;
+  height: 32px;
+  background-color: var(--bg-button-play);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.action-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-card-text);
+}
+
+.card-action:hover .icon-play {
+  transform: translateX(10px);
+  transition: 0.3s ease-in-out;
+}
+
+.card-action:hover .action-text {
+  color: #0f172a;
+}

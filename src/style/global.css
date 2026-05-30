@@ -1,6 +1,64 @@
-:root{
-    --bg-body: white;
-    --bg-element: #0A192F;
-    --color-teks: white;
-    --bg-button: #0A192F;
+:root {
+  --bg-body: #ffffff;
+  --color-body-text: black;
+  --bg-card: #06152d;
+
+  --color-card-text: white;
+  --bg-button-play: white;
+  --icon-play: #06152d;
+}
+
+[data-theme="deuteranomali"] {
+  --bg-body: #1a73e8;
+  --color-body-text: #ffffff;  
+  --bg-card: #06152d;
+
+  --color-card-text: white;
+  --bg-button-play: white;
+  --icon-play: #06152d;
+}
+
+[data-theme="protanomali"],
+[data-theme="protanopia"] {
+  --bg-body: #4ea8de;
+  --color-body-text: #ffffff;
+  --bg-card: #06152d;
+
+  --color-card-text: white;
+  --bg-button-play: white;
+  --icon-play: #06152d;
+}
+
+[data-theme="deuteranopia"] {
+  --bg-body: #0052cc;
+  --color-body-text: #ffffff;
+  --bg-card: #06152d;
+
+  --color-card-text: white;
+  --bg-button-play: white;
+  --icon-play: #06152d;
+}
+
+.kotak-warna { width: 20px; height: 20px; border-radius: 4px; display: inline-block; }
+.warna-deuteranomali { background-color: #1a73e8; }
+.warna-protanomali { background-color: #4ea8de; }
+.warna-deuteranopia { background-color: #0052cc; }
+.warna-protanopia { background-color: #4ea8de; }
+.label-pilihan { padding: 8px; width: 100%; cursor: pointer; transition: background-color 0.2s ease; }
+
+@keyframes reveal-animation {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-in {
+  animation: reveal-animation linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
