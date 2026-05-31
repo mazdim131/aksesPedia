@@ -1,23 +1,23 @@
 const content = document.getElementById("main");
 
 content.innerHTML = `
-  <div class="container-sm container-hero">
-    <div class="row align-items-center h-100">
-      <div class="col-lg-7 col-md-12 d-flex flex-column justify-content-center py-5 ps-5 pe-4">
-        <div class="mb-4">
+  <div class="container-xl container-hero">
+    <div class="row align-items-center gy-4"> <div class="col-lg-7 col-12 d-flex flex-column justify-content-center py-4 py-lg-5 px-3 px-lg-5">
+        <div class="mb-3 mb-lg-4 text-center text-lg-start">
           <a href="#" class="badge-custom-cta d-inline-flex align-items-center text-decoration-none">
             <span class="badge-inner-dark d-flex align-items-center justify-content-center">100+ User membaca berita</span>
             <span class="badge-text-action d-flex align-items-center">Bergabung <i class="bi bi-arrow-right ms-1"></i></span>
           </a>
         </div>
-        <h1 class="text-white hero-title mb-3">Informasi Tanpa Batas Portal Berita Ramah Disabilitas.</h1>
-        <p class="hero-description mb-4">Dengarkan kisah, dapatkan informasi krusial, dan pelajari praktik aksesibilitas terbaik untuk menciptakan dunia digital yang adil bagi semua.</p>
-        <div class="d-flex gap-3 btn-hero-option">
+        <h1 class="text-white hero-title mb-3 text-center text-lg-start">Informasi Tanpa Batas Portal Berita Ramah Disabilitas.</h1>
+        <p class="hero-description mb-4 text-center text-lg-start">Dengarkan kisah, dapatkan informasi krusial, dan pelajari praktik aksesibilitas terbaik untuk menciptakan dunia digital yang adil bagi semua.</p>
+        <div class="d-flex flex-wrap gap-3 btn-hero-option justify-content-center justify-content-lg-start">
           <button class="btn btn-primary-custom d-flex align-items-center justify-content-center">Mulai Membaca <i class="bi bi-arrow-right ms-2"></i></button>
           <button class="btn btn-light-custom d-flex align-items-center justify-content-center">Pelajari Lebih Lanjut</button>
         </div>
       </div>
-      <div class="col-lg-5 col-md-12 hero-image-wrapper d-flex align-items-end h-100">
+      
+      <div class="col-lg-5 col-12 hero-image-wrapper d-flex justify-content-center align-items-end">
         <img src="/src/assets/hero.png" alt="Pria membaca koran" class="img-fluid hero-img">
       </div>
     </div>
@@ -25,12 +25,12 @@ content.innerHTML = `
 
   <div class="container my-5 fade-in">
     <div class="row g-4">
-      <div class="col-lg-7 col-md-12">
+      <div class="col-lg-7 col-12">
         <article class="featured-card">
-          <div class="position-relative overflow-hidden rounded-4 mb-3">
+          <div class="position-relative overflow-hidden rounded-4 mb-3 image-featured-wrapper">
             <img src="/src/assets/newsAssets/arsenal-juara-liga-inggris-2025-2026.jpg" alt="Arsenal Juara" class="img-fluid w-100 featured-img">
             <span class="badge-category position-absolute top-0 start-0 m-3">Olahraga</span>
-            <div class="badge-floating-title position-absolute bottom-0 start-0 m-4 px-4 py-2 bg-white rounded-3 shadow">
+            <div class="badge-floating-title position-absolute bottom-0 start-0 m-3 m-lg-4 px-3 px-lg-4 py-2 bg-white rounded-3 shadow">
               Berita Olahraga <span class="fw-bold">Juara</span>
             </div>
           </div>
@@ -49,60 +49,65 @@ content.innerHTML = `
         </article>
       </div>
 
-      <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-between">
-        <div class="news-side-list d-flex flex-column gap-4 mb-4">
-          <div class="news-side-item pb-4 border-bottom">
-            <div class="row g-3 align-items-center">
-              <div class="col-4">
+      <div class="col-lg-5 col-12 d-flex flex-column justify-content-between gap-4">
+        <div class="news-side-list d-flex flex-column gap-3 mb-2">
+          
+          <div class="news-side-item pb-3 border-bottom">
+            <div class="row g-2 align-items-center">
+              <div class="col-4 col-sm-3 col-lg-4">
                 <img src="/src/assets/newsAssets/persib-bandung-juara-liga-1-1748142161979_169.jpeg" alt="Persib Juara" class="img-fluid rounded-3 w-100 object-fit-cover img-news-right">
               </div>
-              <div class="col-8">
-                <span class="badge bg-dark-navy mb-2">Olahraga</span>
-                <h5 class="side-news-title mb-2" style="color: var(--color-body-text);">Persib Bandung Klub Pertama Hattrick Juara di Era Liga Indonesia</h5>
+              <div class="col-8 col-sm-9 col-lg-8">
+                <span class="badge bg-dark-navy mb-1 mb-lg-2">Olahraga</span>
+                <h5 class="side-news-title mb-1" style="color: var(--color-body-text);">Persib Bandung Klub Pertama Hattrick Juara di Era Liga Indonesia</h5>
                 <div class="d-flex justify-content-between text-muted small-text"><span style="color: var(--color-body-text);">CNN Indonesia</span><span style="color: var(--color-body-text);">23 Mei 2026</span></div>
               </div>
             </div>
           </div>
-          <div class="news-side-item pb-4 border-bottom">
-            <div class="row g-3 align-items-center">
-              <div class="col-4">
+
+          <div class="news-side-item pb-3 border-bottom">
+            <div class="row g-2 align-items-center">
+              <div class="col-4 col-sm-3 col-lg-4">
                 <img src="/src/assets/newsAssets/result_ChatGPT-Image-May-18-2026-08_05_59-AM-420x280.webp" alt="Bayern Munich" class="img-fluid rounded-3 w-100 object-fit-cover img-news-right">
               </div>
-              <div class="col-8">
-                <span class="badge bg-dark-navy mb-2">Olahraga</span>
-                <h5 class="side-news-title mb-2" style="color: var(--color-body-text);">Bayern Munich Pastikan Angkat Trofi Bundesliga di Allianz Arena</h5>
+              <div class="col-8 col-sm-9 col-lg-8">
+                <span class="badge bg-dark-navy mb-1 mb-lg-2">Olahraga</span>
+                <h5 class="side-news-title mb-1" style="color: var(--color-body-text);">Bayern Munich Pastikan Angkat Trofi Bundesliga di Allianz Arena</h5>
                 <div class="d-flex justify-content-between text-muted small-text"><span style="color: var(--color-body-text);">Garuda TV</span><span style="color: var(--color-body-text);">11 Mei 2025</span></div>
               </div>
             </div>
           </div>
-          <div class="news-side-item pb-4">
-            <div class="row g-3 align-items-center">
-              <div class="col-4">
-                <img src="/src/assets/newsAssets/soccer-champions-psg-intreport-1748726157629_169.jpeg" alt="PSG Juara" class="img-fluid rounded-3 w-100 object-fit-coverimg-news-right img-news-right">
+
+          <div class="news-side-item pb-3">
+            <div class="row g-2 align-items-center">
+              <div class="col-4 col-sm-3 col-lg-4">
+                <img src="/src/assets/newsAssets/soccer-champions-psg-intreport-1748726157629_169.jpeg" alt="PSG Juara" class="img-fluid rounded-3 w-100 object-fit-cover img-news-right">
               </div>
-              <div class="col-8">
-                <span class="badge bg-dark-navy mb-2">Olahraga</span>
-                <h5 class="side-news-title mb-2" style="color: var(--color-body-text);">Juara Liga Champions, PSG Resmi Raih Treble</h5>
+              <div class="col-8 col-sm-9 col-lg-8">
+                <span class="badge bg-dark-navy mb-1 mb-lg-2">Olahraga</span>
+                <h5 class="side-news-title mb-1" style="color: var(--color-body-text);">Juara Liga Champions, PSG Resmi Raih Treble</h5>
                 <div class="d-flex justify-content-between text-muted small-text"><span style="color: var(--color-body-text);">CNN Indonesia</span><span style="color: var(--color-body-text);">01 Jun 2025</span></div>
               </div>
             </div>
           </div>
+
         </div>
+        
         <div class="sumber-terkenal-section pt-3 border-top">
           <h6 class="fw-bold mb-3" style="color: var(--color-body-text);">Sumber Terkenal</h6>
-          <div class="d-flex gap-4 align-items-center">
-            <div class="d-flex align-items-center gap-2 brand-logo"><img src="/src/assets/logo/cnn.png" alt="CNN"></div>
-            <div class="d-flex align-items-center gap-2 brand-logo"><img src="/src/assets/logo/garuda-tv.png" alt="GarudaTV"></div>
-            <div class="d-flex align-items-center gap-2 brand-logo"><img src="/src/assets/logo/radar-sumbar.png" alt="RadarSumbar"></div>
+          <div class="d-flex flex-wrap gap-3 gap-md-4 align-items-center">
+            <div class="brand-logo"><img src="/src/assets/logo/cnn.png" alt="CNN"></div>
+            <div class="brand-logo"><img src="/src/assets/logo/garuda-tv.png" alt="GarudaTV"></div>
+            <div class="brand-logo"><img src="/src/assets/logo/radar-sumbar.png" alt="RadarSumbar"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-sm container-category text-center fade-in">
+  <div class="container-xl container-category text-center fade-in">
     <div class="mb-3"><span class="badge-hot-news">Hot News</span></div>
-    <div class="category-header mb-5">
+    <div class="category-header mb-4 mb-lg-5">
       <h1 class="text-white category-title mb-2">Kategori Teratas</h1>
       <p class="category-subtitle">Jelajahi kategori berita terpopuler dari <span class="fw-bold text-white">AksesPedia</span></p>
     </div>
@@ -128,7 +133,6 @@ content.innerHTML = `
 
   <div class="container my-5 fade-in">
     <h3 class="mb-4 fw-bold" style="color: var(--color-body-text);">Rekomendasi Berita</h3>
-    
     <div class="swiper news-swiper">
       <div class="swiper-wrapper">
         
@@ -223,50 +227,29 @@ content.innerHTML = `
   </div>
 `;
 
+// Fungsi initNewsSwiper di bawah ini dipertahankan karena konfigurasinya sudah benar
 function initNewsSwiper() {
   const swiperElement = document.querySelector(".news-swiper");
-  
-  if (!swiperElement) {
-    console.error("DEBUG: Elemen .news-swiper tidak ditemukan di DOM!");
-    return;
-  }
-
-  if (typeof Swiper === "undefined") {
-    console.error("DEBUG: Library Swiper.js gagal dimuat dari CDN. Periksa tag <script> CDN Anda!");
-    return;
-  }
-
-  console.log("DEBUG: Menginisialisasi Swiper...");
+  if (!swiperElement) return;
 
   const newSwiperInstance = new Swiper(".news-swiper", {
     slidesPerView: 1,
     spaceBetween: 24,
     grabCursor: true,
     loop: false,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    autoplay: { delay: 3000, disableOnInteraction: false },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
       dynamicBullets: true,
     },
     breakpoints: {
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      },
+      576: { slidesPerView: 2, spaceBetween: 24 },
+      992: { slidesPerView: 3, spaceBetween: 24 },
     },
   });
-
   setTimeout(() => {
     newSwiperInstance.update();
   }, 100);
 }
-
 setTimeout(initNewsSwiper, 150);
