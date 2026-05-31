@@ -1,6 +1,8 @@
 let footer = document.getElementById("footer");
 
-footer.innerHTML = `        <!-- atas -->
+footer.innerHTML = `  
+    <div class= "footer-container">
+<!-- atas -->
         <div class="footer-top">
 
             <!-- kiri -->
