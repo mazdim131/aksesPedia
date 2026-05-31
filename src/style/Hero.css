@@ -26,15 +26,52 @@ body {
 #navbar {
   display: block;
   width: 100%;
-  padding: 10px 40px !important;
+  padding: 0 !important;
   box-sizing: border-box;
   position: relative;
   z-index: 1001;
 }
 
-footer {
-  margin-bottom: 20px !important;
+/* Navbar Overrides for Hero Page Alignment */
+#navbar .navigasi-kustom {
+  width: 100% !important;
+  border-radius: 30px !important;
+  padding: 12px 60px !important;
+  margin-top: 20px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
 }
+
+#navbar .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-radius: 0 !important;
+}
+
+#navbar .navbar-brand {
+  margin-top: 3px !important;
+  /* Moves the text down slightly */
+}
+
+#footer .logo h5 {
+  margin-top: 2px !important;
+  /* Align footer text with logo icon */
+}
+
+/* Footer Alignment and Styling for Hero Page */
+/* footer {
+  width: 100% !important;
+  border-radius: 30px !important;
+  padding: 40px 60px !important;
+  margin-top: 50px !important;
+  margin-bottom: 20px !important;
+  box-sizing: border-box;
+} */
+
+.footer-top {
+  align-items: center !important;
+}
+
+
 
 
 /* HERO SECTION — Konfigurasi Utama */
@@ -44,8 +81,8 @@ footer {
   background-size: cover;
   background-position: center;
   color: var(--color-white);
-  padding-top: 130px;
-  margin-top: -150px;
+  padding-top: 60px;
+  margin-top: 20px;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 40px;
@@ -150,6 +187,10 @@ footer {
   border-right: 2px solid white;
 }
 
+.hero__links .col-lg-4:last-child .hero-link::after {
+  display: none;
+}
+
 
 .hero-link:hover {
   background: rgba(255, 255, 255, 0.08);
@@ -174,7 +215,7 @@ footer {
 /* TRENDING SECTION */
 .trending {
   margin-top: 0;
-  padding: 60px 0;
+  padding: 50px 20px;
 }
 
 .trending__heading {
@@ -242,12 +283,17 @@ footer {
 /* TAGLINE SECTION */
 .tagline {
   background-color: #fcfcfc;
+  padding: 50px 20px;
 }
 
 .tagline__title {
   color: var(--color-text);
 }
 
+
+.berita {
+  padding: 50px 20px;
+}
 
 /* BERITA SECTION — Cards */
 .card-berita {
@@ -424,16 +470,51 @@ footer {
 
 /* RESPONSIVE — Mobile (max 768px) */
 @media (max-width: 768px) {
+  body {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* Navbar Spacing */
+  #navbar {
+    margin-bottom: 20px;
+    padding: 0 5px !important;
+  }
+
+  .navigasi-kustom {
+    margin-top: 15px !important;
+    border-radius: 20px !important;
+  }
 
   .hero {
-    margin-top: -60px;
-    padding-top: 90px;
+    margin: 5px !important;
+    margin-top: 10px;
+    padding-top: 40px;
     border-radius: 20px;
   }
 
-  .hero__inner {
-    padding: 0 16px;
+  /* Trending & Content Spacing */
+  .trending,
+  .tagline,
+  .berita {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin: 10px !important;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fafafa;
+    border: 1px solid #f0f0f0;
   }
+
+  .hero__inner {
+    padding: 20px 30px 40px 30px;
+  }
+
+  .hero__title {
+    font-size: 2.2rem !important;
+    margin-bottom: 15px !important;
+  }
+
 
   /* Trending: hanya munculkan item 1 & 2 */
   .trending__list {
@@ -446,10 +527,14 @@ footer {
   }
 
   .hero-link {
-    border-right: 1px solid white !important;
+    border-right: none !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
     min-height: auto;
     padding: 18px 20px;
+  }
+
+  .hero-link::after {
+    display: none !important;
   }
 
   .hero-link:last-child {
@@ -467,6 +552,57 @@ footer {
   .card-berita {
     margin-bottom: 12px;
   }
+
+  /* Pilihan Redaksi Responsive — Mobile */
+  .reaksi__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-reaksi {
+    flex-direction: column !important;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 0 !important;
+    border: 1px solid #f0f0f0 !important;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .card-reaksi__img {
+    width: 100% !important;
+    height: 180px !important;
+    border-radius: 0 !important;
+  }
+
+  .card-reaksi>div:last-child {
+    padding: 15px;
+  }
+
+
+  footer {
+    padding: 30px 30px !important;
+    border-radius: 30px !important;
+    margin: 10px !important;
+    width: auto !important;
+    margin-bottom: 20px !important;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .social-icons {
+    justify-content: flex-start !important;
+  }
 }
 
 /* --- Tablet (max 992px) --- */
@@ -474,5 +610,19 @@ footer {
   .trending__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .reaksi__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-link {
+    border-right: none !important;
+  }
+
+  .hero-link::after {
+    display: none !important;
   }
 }

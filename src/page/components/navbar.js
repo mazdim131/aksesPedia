@@ -1,7 +1,7 @@
 const bilahNavigasi = document.getElementById("navbar");
 bilahNavigasi.innerHTML = `
-<nav class="navbar navbar-expand-lg mt-3 navigasi-kustom rounded-5">
-  <div class="container-fluid rounded-5 px-4 py-2 d-flex align-items-center justify-content-between">
+<nav class="navbar navbar-expand-lg navigasi-kustom">
+  <div class="container-fluid p-0 d-flex align-items-center justify-content-between">
     
     <div class="d-flex align-items-center">
       <img src="/src/assets/logo/logo.png" class="p-0 m-0" style="height: 30px; display: block;">

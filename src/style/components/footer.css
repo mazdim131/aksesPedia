@@ -115,6 +115,10 @@ footer {
   opacity: 0.8;
 }
 
+.footer-top {
+  align-items: center !important;
+}
+
 /* ===== BOTTOM SECTION ===== */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -159,6 +163,21 @@ footer {
   footer {
     padding: 40px 30px;
     border-radius: 40px;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .social-icons {
+    justify-content: flex-start !important;
   }
 }
 
