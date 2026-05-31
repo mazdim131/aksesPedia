@@ -61,4 +61,30 @@
   animation: reveal-animation linear both;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
+:root{
+    --bg-body: white;
+    --bg-element: #0A192F;
+    --color-teks: white;
+    --bg-button: #0A192F;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700, 400");
+* {
+-webkit-font-smoothing: antialiased;
+box-sizing: border-box;
+}
+
+html,
+body {
+margin: 0px;
+height: 100%;
+}
+
+button:focus-visible {
+outline: 2px solid #4a90e2 !important;
+outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+text-decoration: none;
 }
