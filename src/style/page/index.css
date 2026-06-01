@@ -384,3 +384,180 @@ body {
   border-radius: 6px;
   z-index: 2;
 }
+
+
+
+/* ==== bagian modal ==== */
+.modal-content {
+  padding: 15px;
+}
+
+@media (min-width: 576px) {
+  .modal-content {
+    padding: 25px;
+  }
+}
+
+.img-icon-butaWarna {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+.card-text h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-text span {
+  font-size: 13px;
+}
+
+.custom-select {
+  display: inline-block;
+}
+
+.custom-select input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-select .select-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 24px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.custom-select .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d1b2a; 
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  flex-shrink: 0; 
+}
+
+.custom-select input[type="radio"]:checked + .select-button .circle {
+  background-color: #ffffff; 
+  border: 5px solid #0d1b2a; 
+}
+
+.custom-select input[type="radio"]:checked + .select-button {
+  border-color: #0d1b2a;
+  background-color: #f8f9fa;
+}
+
+.custom-select:hover .select-button {
+  transform: translateY(-1px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+#btnSimpanPreferensi {
+  background-color: #06152d !important;
+  border: none;
+}
+
+@media (max-width: 575.98px) {
+  .w-100-sm {
+    width: 100%;
+  }
+  
+  .custom-select .select-button {
+    padding: 12px; 
+  }
+
+  .card-text {
+    margin-top: 5px;
+  }
+}
+
+
+/* Styling List Shortcut */
+.shortcut-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.shortcut-label {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.shortcut-keys {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0; 
+}
+
+.shortcut-keys span {
+  font-weight: bold;
+  color: #666;
+  font-size: 14px;
+}
+
+kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 35px;
+  padding: 0 8px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333333 !important;
+  background-color: #ffffff !important; 
+  border: 1px solid #333333;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .border-end-md {
+    border-end: 1px solid #dee2e6;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .modal-body {
+    padding: 25px 20px !important;
+  }
+  
+  .shortcut-item {
+    flex-wrap: wrap; 
+    gap: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #eee; 
+  }
+
+  .shortcut-label {
+    width: 100%; 
+    font-size: 14px;
+  }
+  
+  .shortcut-keys {
+    width: 100%;
+    justify-content: flex-start; 
+    margin-top: 2px;
+  }
+}
