@@ -1,20 +1,40 @@
+.default {
+  background-color: white;
+}
+
+.warna-deuteranomali {
+  background-color: #1e70e7;
+}
+
+.warna-protanomali {
+  background-color: #4da9e1;
+}
+
+.warna-deuteranopia {
+  background-color: #0053ce;
+}
+
+.warna-protanopia {
+  background-color: #4ba6dd;
+}
+
 .navigasi-kustom {
   background-color: #0b1d33 !important;
-  padding: 4px 30px !important;
-  /* Matches hero content padding (60px) */
-  position: relative;
-  z-index: 1000;
-  margin-top: 50px;
-
-  width: 100% !important;
-  border-radius: 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding-left: 30px !important;
 }
 
 .dropdown-aksesibilitas {
   width: 340px;
   border-radius: 1.5rem !important;
   border: none !important;
+}
+
+.dropdown-aksesibilitas .text-dark {
+  color: black !important;
+}
+
+.dropdown-aksesibilitas .text-muted {
+  color: color-mix(in srgb, var(--color-body-text) 60%, transparent) !important;
 }
 
 .label-pilihan {
@@ -48,7 +68,7 @@
 
 .label-pilihan input:checked+.kotak-warna {
   transform: scale(1.1);
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0b1d33;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--bg-element);
 }
 
 .slider-rentang-kustom {
@@ -103,20 +123,17 @@
 }
 
 .tombol-terapkan {
-  background-color: #0b1d33 !important;
-  color: #ffffff !important;
+  background-color: #0a192f !important;
+  color: white !important;
   font-size: 1rem;
   letter-spacing: 0.5px;
   border-radius: 0.85rem !important;
 }
 
 .tombol-terapkan:hover {
-  background-color: #061222 !important;
+  opacity: 0.85 !important;
 }
 
-.ikon-panah {
-  transition: transform 0.2s ease-in-out;
-}
 
 @media (max-width: 991.98px) {
   .dropdown-aksesibilitas {

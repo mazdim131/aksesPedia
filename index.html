@@ -7,7 +7,8 @@
     <title>Akses Pedia | Selamat Datang!</title>
     <!-- favicon -->
     <link rel="Icon" href="/src/assets/logo/logo.png">
-
+    <!-- CDN swiperjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <!-- css global -->
     <link rel="stylesheet" href="/src/style/global.css">
     <!-- css component navbar -->
@@ -15,7 +16,7 @@
     <!-- css component footer -->
     <link rel="stylesheet" href="/src/style/components/footer.css">
     <!-- css index -->
-    <link rel="stylesheet" href="/src/style/content/index.css">
+    <link rel="stylesheet" href="/src/style/page/index.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +24,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
 
     <!-- CDN Bootstrap Component -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,16 +33,18 @@
 </head>
 
 <body class="container-sm">
-    <header>
-        <navbar id="navbar"></navbar>
+    <header class="container-sm">
+        <navbar id="navbar" class="container-sm"></navbar>
     </header>
 
     <main>
         <div id="main"></div>
     </main>
 
-    <footer id="footer"></footer>
+    <footer id="footer" class="fade-in"></footer>
 
+    <!-- JS swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <!-- JS index -->
     <script src="/src/page/content/index.js"></script>
     <!-- JS component navbar -->

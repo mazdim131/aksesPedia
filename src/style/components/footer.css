@@ -8,19 +8,12 @@
 }
 
 footer {
+  margin-top: 5%;
   width: 100%;
-  background: var(--footer-bg);
-  color: var(--footer-text);
-  /* Only top rounded for regular pages, but based on image let's use: */
+  background: var(--bg-element);
   border-radius: 20px 100px 20px 100px;
-  /* Matching the unique shape in the crop if it's a side-aligned footer, but usually it's top-rounded for full width */
-  padding: 60px 80px 40px;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 50px;
-}
-
-.footer-container {
-  border-radius: 0 0 0 0;
+  padding: 60px 70px 30px;
+  color: var(--color-teks);
 }
 
 /* ===== TOP SECTION ===== */
@@ -76,10 +69,7 @@ footer {
   transition: transform 0.2s, background 0.2s;
 }
 
-.footer-left .btn:hover {
-  background: #f0f0f0;
-  transform: translateY(-2px);
-}
+/* Menu */
 
 /* ===== MENU SECTION ===== */
 .footer-menu {
@@ -103,11 +93,15 @@ footer {
 
 .footer-menu a::before {
   content: "";
-  display: inline-block;
-  width: 4px;
-  height: 18px;
-  background: white;
-  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-50%);
+
+  width: 6px;
+  height: 22px;
+  border-radius: 20px;
+  background: var(--color-teks);
 }
 
 .footer-menu a:hover {
@@ -115,9 +109,7 @@ footer {
   opacity: 0.8;
 }
 
-.footer-top {
-  align-items: center !important;
-}
+/* bottom */
 
 /* ===== BOTTOM SECTION ===== */
 .footer-bottom {
@@ -127,6 +119,33 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
+.footer-left .btn {
+  width: 240px;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-left .btn:hover {
+  background: var(--color-teks);
+  transform: translateY(-2px);
+  color: rgb(68, 68, 68);
+}
+
+/* Copyright */
 
 .footer-bottom p {
   font-size: 12px;
@@ -149,7 +168,8 @@ footer {
   color: var(--footer-text-muted);
 }
 
-/* ===== RESPONSIVE ===== */
+/* Responsive */
+
 @media (max-width: 992px) {
   .footer-top {
     flex-direction: column;
@@ -161,8 +181,8 @@ footer {
   }
 
   footer {
-    padding: 40px 30px;
-    border-radius: 40px;
+    border-radius: 0 40px 0 40px;
+    padding: 40px 25px 20px;
   }
 
   .footer-top,
