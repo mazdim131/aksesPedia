@@ -1,9 +1,14 @@
 .navigasi-kustom {
   background-color: #0b1d33 !important;
   padding: 4px 30px !important;
+  /* Matches hero content padding (60px) */
   position: relative;
   z-index: 1000;
   margin-top: 50px;
+
+  width: 100% !important;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-aksesibilitas {
