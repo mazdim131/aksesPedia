@@ -10,7 +10,7 @@
 
 [data-theme="deuteranomali"] {
   --bg-body: #1a73e8;
-  --color-body-text: #ffffff;  
+  --color-body-text: #ffffff;
   --bg-card: #06152d;
 
   --color-card-text: white;
@@ -39,18 +39,42 @@
   --icon-play: #06152d;
 }
 
-.kotak-warna { width: 20px; height: 20px; border-radius: 4px; display: inline-block; }
-.warna-deuteranomali { background-color: #1a73e8; }
-.warna-protanomali { background-color: #4ea8de; }
-.warna-deuteranopia { background-color: #0052cc; }
-.warna-protanopia { background-color: #4ea8de; }
-.label-pilihan { padding: 8px; width: 100%; cursor: pointer; transition: background-color 0.2s ease; }
+.kotak-warna {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.warna-deuteranomali {
+  background-color: #1a73e8;
+}
+
+.warna-protanomali {
+  background-color: #4ea8de;
+}
+
+.warna-deuteranopia {
+  background-color: #0052cc;
+}
+
+.warna-protanopia {
+  background-color: #4ea8de;
+}
+
+.label-pilihan {
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
 
 @keyframes reveal-animation {
   from {
     opacity: 0;
     transform: translateY(100px) scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -61,30 +85,34 @@
   animation: reveal-animation linear both;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
-:root{
+
+  :root {
     --bg-body: white;
     --bg-element: #0A192F;
     --color-teks: white;
     --bg-button: #0A192F;
-}
+  }
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Poppins:500,700, 400");
-* {
--webkit-font-smoothing: antialiased;
-box-sizing: border-box;
-}
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Poppins:500,700, 400");
 
-html,
-body {
-margin: 0px;
-height: 100%;
-}
+  * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
 
-button:focus-visible {
-outline: 2px solid #4a90e2 !important;
-outline: -webkit-focus-ring-color auto 5px !important;
-}
-a {
-text-decoration: none;
+  html,
+  body {
+    margin: 0px;
+    height: 100%;
+  }
+
+  button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }

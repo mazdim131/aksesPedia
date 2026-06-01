@@ -1,5 +1,8 @@
-const footer = document.getElementById("footer");
-footer.innerHTML = `        
+let footer = document.getElementById("footer");
+
+footer.innerHTML = `  
+    <div class= "footer-container">
+<!-- atas -->
         <div class="footer-top">
 
             <div class="footer-left">

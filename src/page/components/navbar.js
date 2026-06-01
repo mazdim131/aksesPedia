@@ -1,16 +1,12 @@
 const bilahNavigasi = document.getElementById("navbar");
 bilahNavigasi.innerHTML = `
-<div class="fixed-top mt-3">
-  
-  <div class="container-sm px-2 px-sm-0">
+<nav class="navbar navbar-expand-lg mt-3 navigasi-kustom rounded-5">
+  <div class="container-fluid rounded-5 px-4 py-2 d-flex align-items-center justify-content-between">
     
-    <nav class="navbar navbar-expand-lg navigasi-kustom rounded-5 shadow">
-      <div class="container-fluid rounded-5 px-4 py-2 d-flex align-items-center justify-content-between">
-        
-        <div class="d-flex align-items-center">
-          <img src="/src/assets/logo/logo.png" class="p-0 m-0" style="height: 30px; display: block;">
-          <a class="navbar-brand text-white fw-bold p-0 m-0" href="/index.html" style="margin-left: -2px !important; line-height: 1;">ksesPedia</a>
-        </div>
+    <div class="d-flex align-items-center">
+      <img src="/src/assets/logo/logo.png" class="p-0 m-0" style="height: 30px; display: block;">
+      <a class="navbar-brand text-white fw-bold p-0 m-0" href="/index.html" style="margin-left: -2px !important; line-height: 1;">ksesPedia</a>
+    </div>
 
         <button class="navbar-toggler border-0 text-white d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavigasi">
           <i class="bi bi-list fs-2"></i>
