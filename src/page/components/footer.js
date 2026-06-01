@@ -1,9 +1,7 @@
-let footer = document.getElementById("footer");
-
-footer.innerHTML = `        <!-- atas -->
+const footer = document.getElementById("footer");
+footer.innerHTML = `        
         <div class="footer-top">
 
-            <!-- kiri -->
             <div class="footer-left">
 
                 <div class="logo d-flex" >
@@ -15,11 +13,10 @@ footer.innerHTML = `        <!-- atas -->
                     Menghapus sekat digital, merayakan kesetaraan informasi lewat suara.
                 </p>
 
-                <a href="#" class="btn">Panduan Pengguna</a>
+                <a href="#" class="btn btn-light">Panduan Pengguna</a>
 
             </div>
 
-            <!-- menu -->
             <div class="footer-menu">
 
                 <a href="#">Beranda</a>
@@ -31,7 +28,6 @@ footer.innerHTML = `        <!-- atas -->
 
         </div>
 
-        <!-- bawah -->
         <div class="footer-bottom">
 
             <p>Copyright 2026 | All Rights Reserved</p>
