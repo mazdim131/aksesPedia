@@ -1,13 +1,26 @@
-.default{ background-color: white;}
-.warna-deuteranomali { background-color: #1e70e7; }
-.warna-protanomali    { background-color: #4da9e1; }
-.warna-deuteranopia   { background-color: #0053ce; }
-.warna-protanopia    { background-color: #4ba6dd; }
+.default {
+  background-color: white;
+}
+
+.warna-deuteranomali {
+  background-color: #1e70e7;
+}
+
+.warna-protanomali {
+  background-color: #4da9e1;
+}
+
+.warna-deuteranopia {
+  background-color: #0053ce;
+}
+
+.warna-protanopia {
+  background-color: #4ba6dd;
+}
 
 .navigasi-kustom {
-  background-color: #0a192f !important;
-  padding-left: 20px !important;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+  background-color: #0b1d33 !important;
+  padding-left: 30px !important;
 }
 
 .dropdown-aksesibilitas {
@@ -37,7 +50,23 @@
   transition: all 0.2s ease-in-out;
 }
 
-.label-pilihan input:checked + .kotak-warna {
+.warna-deuteranomali {
+  background-color: #1e70e7;
+}
+
+.warna-protanomali {
+  background-color: #4da9e1;
+}
+
+.warna-deuteranopia {
+  background-color: #0053ce;
+}
+
+.warna-protanopia {
+  background-color: #4ba6dd;
+}
+
+.label-pilihan input:checked+.kotak-warna {
   transform: scale(1.1);
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--bg-element);
 }
@@ -46,6 +75,51 @@
   height: 6px;
   border-radius: 3px;
   background: #e2e8f0;
+}
+
+.slider-rentang-kustom::-webkit-slider-thumb {
+  background: #fff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  margin-top: -0.4rem !important;
+}
+
+.slider-rentang-kustom::-webkit-slider-runnable-track {
+  background: #0b1d33 !important;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.bungkus-hitung-teks {
+  border: 1px solid #000000;
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 240px;
+  overflow: hidden;
+}
+
+.tombol-hitung {
+  border: none;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #000000;
+  width: 50px;
+  transition: background 0.2s;
+}
+
+.tombol-hitung:hover {
+  background-color: #f8fafc;
+}
+
+.nilai-hitung-teks {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #000000;
 }
 
 .tombol-terapkan {
