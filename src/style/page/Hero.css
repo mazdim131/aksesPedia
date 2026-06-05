@@ -568,7 +568,7 @@ body {
 
 
   footer {
-    padding: 30px 30px !important;
+    /* padding: 30px 30px !important; */
     border-radius: 30px !important;
     margin: 10px !important;
     width: auto !important;
