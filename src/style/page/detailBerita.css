@@ -214,40 +214,50 @@ body {
 
 #voiceToast {
     width: 350px;
-    background: #0f1626;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
     border-radius: 18px;
     overflow: hidden;
 
     box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.35);
+        0 12px 35px rgba(15, 22, 38, 0.15);
 
     backdrop-filter: blur(15px);
 }
 
 #voiceToast .toast-header {
-    background: #112A4F;
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: #f8fafc;
+    color: #0f1626;
+    border-bottom: 1px solid #e5e7eb;
 
     padding: 1rem 1.25rem;
 }
 
 #voiceToast .toast-header i {
-    color: #ff4757;
+    color: #0d6efd;
+    /* biru Bootstrap */
     font-size: 1.1rem;
 }
 
 #voiceToast .toast-body {
-    color: rgba(255, 255, 255, 0.85);
+    color: #475569;
     padding: 1.25rem;
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-/* Tombol Ya */
+#voiceToast .btn-close {
+    filter: none;
+    opacity: 0.7;
+}
+
+#voiceToast .btn-close:hover {
+    opacity: 1;
+}
+
+/* mic aktif */
 #enableVoiceBtn {
-    background: #ff4757;
+    background: #0d6efd;
     border: none;
     border-radius: 10px;
 
@@ -258,17 +268,16 @@ body {
 }
 
 #enableVoiceBtn:hover {
-    background: #ff3045;
+    background: #0b5ed7;
     transform: translateY(-2px);
 }
 
-/* Tombol Tidak */
+/* mic ga*/
 #disableVoiceBtn {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-
+    background: #f1f5f9;
+    border: 1px solid #d1d5db;
     border-radius: 10px;
-    color: white;
+    color: #475569;
 
     padding: 8px 18px;
     font-weight: 600;
@@ -277,12 +286,12 @@ body {
 }
 
 #disableVoiceBtn:hover {
-    background: rgba(255, 255, 255, 0.08);
-    color: white;
+    background: #e2e8f0;
+    color: #334155;
 }
 
 #voiceToast .btn-close {
-    filter: invert(1);
+    /* filter: invert(1); */
     opacity: 0.7;
 }
 
