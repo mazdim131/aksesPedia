@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const voiceStatus = document.getElementById('voice-status');
 
         let isSpeaking = false;
+        updateVoiceUI();
 
         // Mengekstrak teks dari HTML
         const tempDiv = document.createElement('div');
@@ -108,13 +109,46 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             voiceBtn.addEventListener('click', toggleTTS);
+            // Toast Konfirmasi Suara
+            const voiceToastElement = document.getElementById('voiceToast');
+            const enableVoiceBtn = document.getElementById('enableVoiceBtn');
+            const disableVoiceBtn = document.getElementById('disableVoiceBtn');
+
+            if (voiceToastElement) {
+
+                const voiceToast = new bootstrap.Toast(
+                    voiceToastElement,
+                    {
+                        autohide: false
+                    }
+                );
+
+                // Tampilkan toast saat halaman dibuka
+                setTimeout(() => {
+                    voiceToast.show();
+                }, 500);
+
+                // Klik Ya
+                enableVoiceBtn.addEventListener('click', () => {
+                    voiceToast.hide();
+
+                    if (!isSpeaking) {
+                        toggleTTS();
+                    }
+                });
+
+                // Klik Tidak
+                disableVoiceBtn.addEventListener('click', () => {
+                    voiceToast.hide();
+                });
+            }
 
             // AUTO-PLAY: Langsung bacakan berita saat halaman terbuka.
-            setTimeout(() => {
-                if (!isSpeaking) {
-                    toggleTTS();
-                }
-            }, 300);
+            // setTimeout(() => {
+            //     if (!isSpeaking) {
+            //         toggleTTS();
+            //     }
+            // }, 300);
 
         } else {
             console.warn("Speech Synthesis tidak didukung di browser ini.");

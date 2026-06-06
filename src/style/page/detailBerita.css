@@ -157,7 +157,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Article Typography */
+/* Article*/
 .detail-text {
     font-family: inherit;
 }
@@ -189,10 +189,8 @@ body {
     line-height: 1.6;
 }
 
-/* Quotes Icon formatting inside article-quote */
 .article-quote::before {
     content: '"';
-    /* Left double quote */
     font-size: 3rem;
     opacity: 0.5;
     margin-right: 10px;
@@ -202,12 +200,110 @@ body {
 
 .article-quote::after {
     content: '"';
-    /* Right double quote */
     font-size: 3rem;
     opacity: 0.5;
     margin-left: 10px;
     vertical-align: bottom;
     line-height: 1;
+}
+
+/*Toast Bantuan Suara */
+.toast-container {
+    z-index: 9999;
+}
+
+#voiceToast {
+    width: 350px;
+    background: #0f1626;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(15px);
+}
+
+#voiceToast .toast-header {
+    background: #112A4F;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    padding: 1rem 1.25rem;
+}
+
+#voiceToast .toast-header i {
+    color: #ff4757;
+    font-size: 1.1rem;
+}
+
+#voiceToast .toast-body {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Tombol Ya */
+#enableVoiceBtn {
+    background: #ff4757;
+    border: none;
+    border-radius: 10px;
+
+    padding: 8px 18px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+#enableVoiceBtn:hover {
+    background: #ff3045;
+    transform: translateY(-2px);
+}
+
+/* Tombol Tidak */
+#disableVoiceBtn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 10px;
+    color: white;
+
+    padding: 8px 18px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+#disableVoiceBtn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+#voiceToast .btn-close {
+    filter: invert(1);
+    opacity: 0.7;
+}
+
+#voiceToast .btn-close:hover {
+    opacity: 1;
+}
+
+.toast.show {
+    animation: slideDown 0.35s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive */
@@ -267,5 +363,16 @@ body {
     .share-dropdown {
         right: auto;
         left: 0;
+    }
+
+    .toast-container {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto !important;
+        width: calc(100% - 30px);
+    }
+
+    #voiceToast {
+        width: 100%;
     }
 }
