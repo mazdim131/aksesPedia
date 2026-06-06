@@ -1,0 +1,387 @@
+/* Global overrides for detailBerita */
+body {
+    background-color: #f7f9fa;
+    /* Lighter background outside the card */
+}
+
+.detail-banner {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 350px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.detail-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-content-card {
+    background-color: #0f1626;
+    border-radius: 16px;
+    padding: 3rem 4rem;
+    margin-top: -100px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Category & Voice Assistant */
+.text-danger {
+    color: #ff4757 !important;
+}
+
+.voice-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #0f1626;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.voice-btn:hover {
+    transform: scale(1.05);
+}
+
+.detail-title {
+    font-size: 2.2rem;
+    line-height: 1.4;
+}
+
+/* Author Info */
+.author-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Share Button & Dropdown */
+.share-btn {
+    border: 2px solid #ffffff !important;
+    color: white !important;
+    background: transparent;
+    border-radius: 10px !important;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.share-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: white;
+}
+
+.share-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 360px;
+    background-color: #112A4F;
+    /* Slightly lighter than card */
+    border-radius: 12px;
+    padding-right: 8px !important;
+    padding: 1.3rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.share-dropdown.d-none {
+    display: none !important;
+}
+
+.share-dropdown.d-block {
+    display: block !important;
+
+}
+
+.share-icon {
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+.share-icon:hover {
+    color: #696767 !important;
+}
+
+.copy-input {
+    font-size: 0.85rem;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+    border-radius: 12px !important;
+    background: transparent !important;
+    color: white !important;
+    padding: 0 10px;
+    margin-top: 8px;
+    min-width: 240px
+}
+
+
+.copy-input:focus {
+    box-shadow: none;
+    border-color: white !important;
+    background: transparent !important;
+    color: white !important;
+}
+
+
+.copy-btn {
+    background: #ff8a00 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    color: white !important;
+    font-weight: 600;
+    /* padding: 0 22px; */
+    margin-left: 10px;
+    margin-top: 8px;
+    min-width: 70px;
+
+}
+
+.copy-btn:hover {
+    background: #e67d00 !important;
+}
+
+/* Divider */
+.detail-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Article*/
+.detail-text {
+    font-family: inherit;
+}
+
+.detail-text p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.detail-text h2 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-quote {
+    display: block;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin: 3rem 0;
+    padding: 0 2rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.article-quote::before {
+    content: '"';
+    font-size: 3rem;
+    opacity: 0.5;
+    margin-right: 10px;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+.article-quote::after {
+    content: '"';
+    font-size: 3rem;
+    opacity: 0.5;
+    margin-left: 10px;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+/*Toast Bantuan Suara */
+.toast-container {
+    z-index: 9999;
+}
+
+#voiceToast {
+    width: 350px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 35px rgba(15, 22, 38, 0.15);
+
+    backdrop-filter: blur(15px);
+}
+
+#voiceToast .toast-header {
+    background: #f8fafc;
+    color: #0f1626;
+    border-bottom: 1px solid #e5e7eb;
+
+    padding: 1rem 1.25rem;
+}
+
+#voiceToast .toast-header i {
+    color: #0d6efd;
+    /* biru Bootstrap */
+    font-size: 1.1rem;
+}
+
+#voiceToast .toast-body {
+    color: #475569;
+    padding: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+#voiceToast .btn-close {
+    filter: none;
+    opacity: 0.7;
+}
+
+#voiceToast .btn-close:hover {
+    opacity: 1;
+}
+
+/* mic aktif */
+#enableVoiceBtn {
+    background: #0d6efd;
+    border: none;
+    border-radius: 10px;
+
+    padding: 8px 18px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+#enableVoiceBtn:hover {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* mic ga*/
+#disableVoiceBtn {
+    background: #f1f5f9;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    color: #475569;
+
+    padding: 8px 18px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+#disableVoiceBtn:hover {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+#voiceToast .btn-close {
+    /* filter: invert(1); */
+    opacity: 0.7;
+}
+
+#voiceToast .btn-close:hover {
+    opacity: 1;
+}
+
+.toast.show {
+    animation: slideDown 0.35s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    header {
+        margin: 15px !important;
+    }
+
+    .share-dropdown {
+        width: calc(100vw - 40px);
+        max-width: 340px;
+        left: 50%;
+        transform: translateX(-10%);
+        right: auto;
+    }
+
+    .copy-input {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .copy-btn {
+        min-width: 80px;
+        margin-left: 8px;
+    }
+
+    footer {
+        padding: 30px 30px !important;
+        /* border-radius: 30px !important; */
+        margin: 10px !important;
+        width: auto !important;
+        margin-bottom: 20px !important;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        /* align-items: flex-start !important; */
+        text-align: left !important;
+    }
+
+    .footer-bottom {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .detail-content-card {
+        padding: 2rem 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .detail-title {
+        font-size: 1.8rem;
+    }
+
+    .share-dropdown {
+        right: auto;
+        left: 0;
+    }
+
+    .toast-container {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto !important;
+        width: calc(100% - 30px);
+    }
+
+    #voiceToast {
+        width: 100%;
+    }
+}
