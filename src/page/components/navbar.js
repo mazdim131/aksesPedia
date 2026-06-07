@@ -72,6 +72,10 @@ bilahNavigasi.innerHTML = `
                 <button type="button" class="btn tombol-terapkan w-100 fw-bold py-3 rounded-3" id="tombolTerapkan">
                   Terapkan
                 </button>
+                <button type="button" class="btn btn-outline-dark w-100 fw-bold py-3 rounded-3 d-flex align-items-center justify-content-center gap-2 mt-3" id="tombolTunaNetra">
+                  <i class="bi bi-volume-up-fill"></i>
+                  <span>Mode Tuna Netra</span>
+                </button>
               </div>
             </li>
           </ul>
@@ -154,6 +158,16 @@ function inisialisasiFiturAksesibilitas() {
         document.documentElement.removeAttribute("data-theme");
         localStorage.removeItem("temaAksesibilitas");
       }
+      return;
+    }
+    const tombolTunaNetra = e.target.closest("#tombolTunaNetra");
+    if (tombolTunaNetra) {
+      if (typeof aktifkanModeTunaNetra === "function") {
+        aktifkanModeTunaNetra();
+      }
+      const dropdown = bootstrap.Dropdown.getInstance(document.getElementById("tombolAksesibilitas"));
+      if (dropdown) dropdown.hide();
+      return;
     }
   });
 }

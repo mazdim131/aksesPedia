@@ -7,14 +7,14 @@ content.innerHTML = `
         <div class="mb-3 mb-lg-4 text-center text-lg-start">
           <a href="#" class="badge-custom-cta d-inline-flex align-items-center text-decoration-none">
             <span class="badge-inner-dark d-flex align-items-center justify-content-center">100+ User membaca berita</span>
-            <span class="badge-text-action d-flex align-items-center">Bergabung <i class="bi bi-arrow-right ms-1"></i></span>
+            <span class="badge-text-action d-flex align-items-center text-dark">Bergabung <i class="bi bi-arrow-right ms-1"></i></span>
           </a>
         </div>
         <h1 class="hero-title mb-3 text-center text-lg-start">Informasi Tanpa Batas Portal Berita Ramah Disabilitas.</h1>
         <p class="hero-description mb-4 text-center text-lg-start">Dengarkan kisah, dapatkan informasi krusial, dan pelajari praktik aksesibilitas terbaik untuk menciptakan dunia digital yang adil bagi semua.</p>
         <div class="d-flex flex-wrap gap-3 btn-hero-option justify-content-center justify-content-lg-start">
           <button type="button" class="btn btn-primary-custom d-flex align-items-center justify-content-center" onclick="window.location.href='/src/page/structure/Hero.html'">Mulai Membaca <i class="bi bi-arrow-right ms-2"></i></button>
-          <button class="btn btn-light-custom d-flex align-items-center justify-content-center">Pelajari Lebih Lanjut</button>
+          <button class="btn btn-light-custom d-flex align-items-center justify-content-center text-dark">Pelajari Lebih Lanjut</button>
         </div>
       </div>
       
@@ -107,7 +107,7 @@ content.innerHTML = `
   </div>
 
   <div class="container-xl container-category text-center fade-in">
-    <div class="mb-3"><span class="badge-hot-news">Hot News</span></div>
+    <div class="mb-3"><span class="badge-hot-news text-dark">Hot News</span></div>
     <div class="category-header mb-4 mb-lg-5">
       <h1 class="category-title mb-2 text-white">Kategori Teratas</h1>
       <p class="category-subtitle text-custom">Jelajahi kategori berita terpopuler dari <span class="fw-bold text-custom">AksesPedia</span></p>
@@ -115,19 +115,19 @@ content.innerHTML = `
     <div class="category-grid">
       <a href="#" class="category-card text-decoration-none">
         <div class="icon-wrapper"><i class="bi bi-bicycle"></i></div>
-        <span class="card-label">Olahraga</span>
+        <span class="card-label text-dark">Olahraga</span>
       </a>
       <a href="#" class="category-card text-decoration-none">
         <div class="icon-wrapper"><i class="bi bi-globe"></i></div>
-        <span class="card-label">Internasional</span>
+        <span class="card-label text-dark">Internasional</span>
       </a>
       <a href="#" class="category-card text-decoration-none">
         <div class="icon-wrapper"><i class="bi bi-flag-fill"></i></div>
-        <span class="card-label">Nasional</span>
+        <span class="card-label text-dark">Nasional</span>
       </a>
       <a href="#" class="category-card text-decoration-none">
         <div class="icon-wrapper"><i class="bi bi-cpu"></i></div>
-        <span class="card-label">Teknologi</span>
+        <span class="card-label text-dark">Teknologi</span>
       </a>
     </div>
   </div>

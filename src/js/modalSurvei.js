@@ -32,7 +32,7 @@ function renderDanInisialisasiModal() {
                                                 <input type="radio" name="pilihan_berita" value="normal" checked>
                                                 <span class="select-button w-100 justify-content-center">
                                                     <span class="circle"></span>
-                                                    <span class="text-button-label">Pilih</span>
+                                                    <span class="text-button-labe text-dark">Pilih</span>
                                                 </span>
                                             </label>
                                         </div>
@@ -54,7 +54,7 @@ function renderDanInisialisasiModal() {
                                                 <input type="radio" name="pilihan_berita" value="protanopia">
                                                 <span class="select-button w-100 justify-content-center">
                                                     <span class="circle"></span>
-                                                    <span class="text-button-label">Pilih</span>
+                                                    <span class="text-button-label text-dark">Pilih</span>
                                                 </span>
                                             </label>
                                         </div>
@@ -76,7 +76,7 @@ function renderDanInisialisasiModal() {
                                                 <input type="radio" name="pilihan_berita" value="deuteranopia">
                                                 <span class="select-button w-100 justify-content-center">
                                                     <span class="circle"></span>
-                                                    <span class="text-button-label">Pilih</span>
+                                                    <span class="text-button-label text-dark">Pilih</span>
                                                 </span>
                                             </label>
                                         </div>
@@ -98,7 +98,7 @@ function renderDanInisialisasiModal() {
                                                 <input type="radio" name="pilihan_berita" value="tritanopia">
                                                 <span class="select-button w-100 justify-content-center">
                                                     <span class="circle"></span>
-                                                    <span class="text-button-label">Pilih</span>
+                                                    <span class="text-button-label text-dark">Pilih</span>
                                                 </span>
                                             </label>
                                         </div>
@@ -151,7 +151,7 @@ function renderDanInisialisasiModal() {
                             <div class="col-12 col-md-6">
                                 <div class="d-flex flex-column gap-4 ps-md-3">
                                     <div class="shortcut-item">
-                                        <span class="shortcut-label">Membuka Panduan Navigasi</span>
+                                        <span class="shortcut-label">Membuka Panduan Shortcut</span>
                                         <div class="shortcut-keys">
                                             <kbd>ALT</kbd> <span>+</span> <kbd>H</kbd>
                                         </div>

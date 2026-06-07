@@ -6,14 +6,12 @@
   --color-card-text: white;
   --bg-button-play: white;
   --icon-play: #06152d;
-
-  --color-text-footer: white;
 }
 
 [data-theme="deuteranomali"] {
   --bg-body: #1a73e8;
   --color-body-text: #ffffff;
-  --bg-card: #06152d;
+  --bg-card: #0a2a50;
 
   --color-card-text: white;
   --bg-button-play: white;
@@ -24,7 +22,7 @@
 [data-theme="protanopia"] {
   --bg-body: #4ea8de;
   --color-body-text: #ffffff;
-  --bg-card: #06152d;
+  --bg-card: #1a3d5c;
 
   --color-card-text: white;
   --bg-button-play: white;
@@ -34,7 +32,7 @@
 [data-theme="deuteranopia"] {
   --bg-body: #0052cc;
   --color-body-text: #ffffff;
-  --bg-card: #06152d;
+  --bg-card: #002561;
 
   --color-card-text: white;
   --bg-button-play: white;
@@ -44,6 +42,11 @@
 [data-theme="tritanopia"] {
   --bg-body: #fff9e6;
   --color-body-text: #1a1a1a;
+  --bg-card: #5c2e2e;
+
+  --color-card-text: white;
+  --bg-button-play: #06152d;
+  --icon-play: white;
 }
 
 .kotak-warna {

@@ -163,3 +163,29 @@ function mengecilkanUkuranTeks() {
 function menujuHalamanBerita() {
   window.location.href = '/src/page/structure/Hero.html';
 }
+
+function aktifkanModeTunaNetra() {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    const teks =
+      'Mode tuna netra aktif. Berikut pintasan keyboard yang tersedia: ' +
+      'ALT A untuk mengaktifkan suara pembacaan berita. ' +
+      'ALT S untuk menonaktifkan suara. ' +
+      'ALT panah kiri untuk berita sebelumnya. ' +
+      'ALT panah kanan untuk berita selanjutnya. ' +
+      'ALT H untuk membuka panduan shortcut ini. ' +
+      'ALT panah atas untuk membesarkan ukuran teks. ' +
+      'ALT panah bawah untuk mengecilkan ukuran teks. ' +
+      'ALT B untuk menuju halaman berita.';
+    const utterance = new SpeechSynthesisUtterance(teks);
+    utterance.lang = 'id-ID';
+    utterance.rate = 0.85;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  const modalEl = document.getElementById('modalKeyboardShortCut');
+  if (modalEl && typeof bootstrap !== 'undefined') {
+    const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl, { backdrop: 'static' });
+    modal.show();
+  }
+}

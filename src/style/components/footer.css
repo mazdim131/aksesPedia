@@ -4,7 +4,7 @@ footer {
   background: var(--bg-card);
   border-radius: 20px 100px 20px 100px;
   padding: 60px 70px 30px;
-  color: var(--color-teks-footer);
+  color: var(--color-card-text);
 }
 
 .footer-top {
@@ -34,14 +34,15 @@ footer {
 .footer-left .logo h5 {
   font-size: 2rem;
   font-weight: 700;
-  color: white;
+  color: var(--color-card-text);
   margin: 0;
 }
 
 .footer-left p {
   font-size: 14px;
   line-height: 1.6;
-  color: var(--footer-text-muted);
+  color: var(--color-card-text);
+  opacity: 0.65;
   margin-bottom: 30px;
 }
 
@@ -69,7 +70,7 @@ footer {
 }
 
 .footer-menu a {
-  color: white;
+  color: var(--color-card-text);
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -88,7 +89,8 @@ footer {
   width: 6px;
   height: 22px;
   border-radius: 20px;
-  background: var(--footer-text);
+  background: var(--color-card-text);
+  opacity: 0.3;
 }
 
 
@@ -125,14 +127,15 @@ footer {
 }
 
 .footer-left .btn:hover {
-  background: var(--color-teks);
+  background: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
-  color: rgb(68, 68, 68);
+  color: var(--color-card-text);
 }
 
 .footer-bottom p {
   font-size: 12px;
-  color: var(--footer-text-muted);
+  color: var(--color-card-text);
+  opacity: 0.5;
   margin: 0;
 }
 
@@ -142,13 +145,13 @@ footer {
 }
 
 .social-icons a {
-  color: white;
+  color: var(--color-card-text);
   font-size: 18px;
   transition: color 0.2s;
 }
 
 .social-icons a:hover {
-  color: var(--footer-text-muted);
+  opacity: 0.6;
 }
 
 @media (max-width: 992px) {
