@@ -13,7 +13,7 @@ content.innerHTML = `
         <h1 class="hero-title mb-3 text-center text-lg-start">Informasi Tanpa Batas Portal Berita Ramah Disabilitas.</h1>
         <p class="hero-description mb-4 text-center text-lg-start">Dengarkan kisah, dapatkan informasi krusial, dan pelajari praktik aksesibilitas terbaik untuk menciptakan dunia digital yang adil bagi semua.</p>
         <div class="d-flex flex-wrap gap-3 btn-hero-option justify-content-center justify-content-lg-start">
-          <button class="btn btn-primary-custom d-flex align-items-center justify-content-center">Mulai Membaca <i class="bi bi-arrow-right ms-2"></i></button>
+          <button type="button" class="btn btn-primary-custom d-flex align-items-center justify-content-center" onclick="window.location.href='/src/page/structure/Hero.html'">Mulai Membaca <i class="bi bi-arrow-right ms-2"></i></button>
           <button class="btn btn-light-custom d-flex align-items-center justify-content-center">Pelajari Lebih Lanjut</button>
         </div>
       </div>
@@ -109,7 +109,7 @@ content.innerHTML = `
   <div class="container-xl container-category text-center fade-in">
     <div class="mb-3"><span class="badge-hot-news">Hot News</span></div>
     <div class="category-header mb-4 mb-lg-5">
-      <h1 class="category-title mb-2 text-custom">Kategori Teratas</h1>
+      <h1 class="category-title mb-2 text-white">Kategori Teratas</h1>
       <p class="category-subtitle text-custom">Jelajahi kategori berita terpopuler dari <span class="fw-bold text-custom">AksesPedia</span></p>
     </div>
     <div class="category-grid">
@@ -226,209 +226,7 @@ content.innerHTML = `
       <div class="swiper-pagination mt-4 position-relative"></div>
     </div>
   </div>
-
-<div class="modal fade" id="modalPreferensi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content rounded-5 text-dark">
-      <div class="modal-body">
-
-        <div class="d-flex">
-          <div class="justify-content-start">
-            <h4><b>Pilih Prefrensi Anda</b></h4>
-            <p style="font-size: 12px; max-width: 300px;">Sesuaikan preferensi membaca Anda agar penjelajahan informasi pada platform ini terasa lebih ramah.</p>
-          </div>
-          <div class="justify-content-end ms-auto">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-
-<div class="cardPreferensi mt-4">
-  
-  <div class="card normalPreferensi rounded-4 mb-3">
-    <div class="card-body">
-      <div class="row align-items-center g-3">
-        <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center flex-column flex-sm-row text-center text-sm-start">
-          <img src="/src/assets/logo/normalIcon.png" alt="Normal Vision" class="img-icon-butaWarna mb-2 mb-sm-0">
-          <div class="card-text ms-sm-4">
-            <h5 class="mb-1"><b>Penglihatan Normal</b></h5>
-            <span class="text-muted">Tampilan standar / normal</span>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
-          <label class="custom-select w-100-sm">
-            <input type="radio" name="pilihan_berita" value="normal" checked>
-            <span class="select-button w-100 justify-content-center">
-              <span class="circle"></span>
-              <span class="text-button-label">Pilih</span>
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card protanopiaPreferensi rounded-4 mb-3">
-    <div class="card-body">
-      <div class="row align-items-center g-3">
-        <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center flex-column flex-sm-row text-center text-sm-start">
-          <img src="/src/assets/logo/protanopiaIcon.png" alt="Protanopia" class="img-icon-butaWarna mb-2 mb-sm-0">
-          <div class="card-text ms-sm-4">
-            <h5 class="mb-1"><b>Protanopia</b></h5>
-            <span class="text-muted">Tampilan untuk buta warna merah (protan).</span>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
-          <label class="custom-select w-100-sm">
-            <input type="radio" name="pilihan_berita" value="protanopia">
-            <span class="select-button w-100 justify-content-center">
-              <span class="circle"></span>
-              <span class="text-button-label">Pilih</span>
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card deuteranopiaPreferensi rounded-4 mb-3">
-    <div class="card-body">
-      <div class="row align-items-center g-3">
-        <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center flex-column flex-sm-row text-center text-sm-start">
-          <img src="/src/assets/logo/deuteranopiaIcon.png" alt="Deuteranopia" class="img-icon-butaWarna mb-2 mb-sm-0">
-          <div class="card-text ms-sm-4">
-            <h5 class="mb-1"><b>Deuteranopia</b></h5>
-            <span class="text-muted">Tampilan untuk buta warna hijau.</span>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
-          <label class="custom-select w-100-sm">
-            <input type="radio" name="pilihan_berita" value="deuteranopia">
-            <span class="select-button w-100 justify-content-center">
-              <span class="circle"></span>
-              <span class="text-button-label">Pilih</span>
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card tritanopiaPreferensi rounded-4 mb-3">
-    <div class="card-body">
-      <div class="row align-items-center g-3">
-        <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center flex-column flex-sm-row text-center text-sm-start">
-          <img src="/src/assets/logo/tritanopiaIcon.png" alt="Tritanopia" class="img-icon-butaWarna mb-2 mb-sm-0">
-          <div class="card-text ms-sm-4">
-            <h5 class="mb-1"><b>Tritanopia</b></h5>
-            <span class="text-muted">Tampilan untuk buta warna biru dan kuning.</span>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
-          <label class="custom-select w-100-sm">
-            <input type="radio" name="pilihan_berita" value="tritanopia">
-            <span class="select-button w-100 justify-content-center">
-              <span class="circle"></span>
-              <span class="text-button-label">Pilih</span>
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>      
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="modalKeyboardShortCut" tabindex="-1" aria-labelledby="modalShortcutsLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content rounded-5 shadow-lg border-0 text-dark">
-      <div class="modal-body">
-        
-        <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom">
-          <h4 class="modal-title" id="modalShortcutsLabel"><b>Keyboard ShortCuts</b></h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-        <div class="row g-4 shortcut-list">
-          
-          <div class="col-12 col-md-6 border-end-md">
-            <div class="d-flex flex-column gap-4 pe-md-3">
-              
-              <div class="shortcut-item">
-                <span class="shortcut-label">Nonaktifkan Suara</span>
-                <div class="shortcut-keys">
-                  <kbd>ALT</kbd> <span>+</span> <kbd>S</kbd>
-                  </div>
-                </div>
-
-              <div class="shortcut-item">
-                <span class="shortcut-label">Aktifkan Suara</span>
-                <div class="shortcut-keys">
-                  <kbd>ALT</kbd> <span>+</span> <kbd>A</kbd>
-                </div>
-              </div>
-
-              <div class="shortcut-item">
-                <span class="shortcut-label">Berita Sebelumnya</span>
-                <div class="shortcut-keys">
-                  <kbd>ALT</kbd> <span>+</span> <kbd><i class="bi bi-arrow-left-square"></i></kbd>
-                </div>
-              </div>
-
-              <div class="shortcut-item">
-                <span class="shortcut-label">Berita Selanjutnya</span>
-                <div class="shortcut-keys">
-                  <kbd>ALT</kbd> <span>+</span> <kbd><i class="bi bi-arrow-right-square"></i></kbd>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="d-flex flex-column gap-4 ps-md-3">
-              
-              <div class="shortcut-item">
-                <span class="shortcut-label">Membuka Panduan Navigasi</span>
-                <div class="shortcut-keys">
-                  <kbd>ALT</kbd> <span>+</span> <kbd>H</kbd>
-                </div>
-              </div>
-
-              <div class="shortcut-item">
-                <span class="shortcut-label">Membesar Ukuran Teks</span>
-                <div class="shortcut-keys">
-                  <kbd>ALT</kbd> <span>+</span> <kbd><i class="bi bi-arrow-up-square"></i></kbd>
-                </div>
-              </div>
-
-              <div class="shortcut-item">
-                <span class="shortcut-label">Mengecilkan Ukuran Teks</span>
-                <div class="shortcut-keys">
-                  <kbd>ALT</kbd> <span>+</span> <kbd><i class="bi bi-arrow-down-square"></i></kbd>
-                </div>
-              </div>
-
-              <div class="shortcut-item">
-                <span class="shortcut-label">Menuju Halaman Berita</span>
-                <div class="shortcut-keys">
-                  <kbd>ALT</kbd> <span>+</span> <kbd>B</kbd>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div> 
-        
-        </div>
-    </div>
-  </div>
-</div>`;
+`;
 
 function initNewsSwiper() {
   const swiperElement = document.querySelector(".news-swiper");
@@ -455,44 +253,4 @@ function initNewsSwiper() {
   }, 100);
 }
 setTimeout(initNewsSwiper, 150);
-
-document.addEventListener("DOMContentLoaded", function () {
-  const modalPrefEl = document.getElementById("modalPreferensi");
-  const modalKeyEl = document.getElementById("modalKeyboardShortCut");
-
-  if (!modalPrefEl || !modalKeyEl || typeof bootstrap === "undefined") return;
-
-  const modalPreferensi = new bootstrap.Modal(modalPrefEl);
-  const modalKeyboard = new bootstrap.Modal(modalKeyEl);
-
-  const berkunjung = sessionStorage.getItem("sudahBerkunjung");
-
-  if (!berkunjung) {
-    modalPreferensi.show();
-
-    modalPrefEl.addEventListener(
-      "hidden.bs.modal",
-      function () {
-        modalKeyboard.show();
-      },
-      { once: true },
-    );
-
-    sessionStorage.setItem("sudahBerkunjung", "true");
-  }
-
-  const radioOpsi = document.querySelectorAll('input[name="pilihan_berita"]');
-
-  radioOpsi.forEach((radio) => {
-    radio.addEventListener("change", function () {
-      if (this.checked) {
-        const jenisOpsi = this.value;
-        document.body.setAttribute("data-theme", jenisOpsi);
-
-        setTimeout(() => {
-          modalPreferensi.hide();
-        }, 300);
-      }
-    });
-  });
-});
+;

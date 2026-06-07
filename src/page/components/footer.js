@@ -16,7 +16,7 @@ footer.innerHTML = `
                     Menghapus sekat digital, merayakan kesetaraan informasi lewat suara.
                 </p>
 
-                <a href="#" class="btn btn-light">Panduan Pengguna</a>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Keyboar Shortcut</buttoclass=>
 
             </div>
 
