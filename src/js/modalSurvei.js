@@ -9,7 +9,7 @@ function renderDanInisialisasiModal() {
                     <div class="modal-body">
                         <div class="d-flex">
                             <div class="justify-content-start">
-                                <h4><b>Pilih Prefrensi Anda</b></h4>
+                                <h4><b>Pilih Preferensi Anda</b></h4>
                                 <p style="font-size: 12px; max-width: 300px;">Sesuaikan preferensi membaca Anda agar penjelajahan informasi pada platform ini terasa lebih ramah.</p>
                             </div>
                             <div class="justify-content-end ms-auto">
@@ -20,14 +20,14 @@ function renderDanInisialisasiModal() {
                             <div class="card normalPreferensi rounded-4 mb-3">
                                 <div class="card-body">
                                     <div class="row align-items-center g-3">
-                                        <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center flex-column flex-sm-row text-center text-sm-start">
-                                            <img src="/src/assets/logo/normalIcon.png" alt="Normal Vision" class="img-icon-butaWarna mb-2 mb-sm-0">
-                                            <div class="card-text ms-sm-4">
+                                        <div class="col-8 col-md-8 col-lg-9 d-flex align-items-center flex-row text-start gap-2 gap-sm-3">
+                                            <img src="/src/assets/logo/normalIcon.png" alt="Normal Vision" class="img-icon-butaWarna flex-shrink-0">
+                                            <div class="card-text min-width-0">
                                                 <h5 class="mb-1"><b>Penglihatan Normal</b></h5>
                                                 <span class="text-muted">Tampilan standar / normal</span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
+                                        <div class="col-4 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
                                             <label class="custom-select w-100-sm">
                                                 <input type="radio" name="pilihan_berita" value="normal" checked>
                                                 <span class="select-button w-100 justify-content-center">
@@ -42,14 +42,14 @@ function renderDanInisialisasiModal() {
                             <div class="card protanopiaPreferensi rounded-4 mb-3">
                                 <div class="card-body">
                                     <div class="row align-items-center g-3">
-                                        <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center flex-column flex-sm-row text-center text-sm-start">
-                                            <img src="/src/assets/logo/protanopiaIcon.png" alt="Protanopia" class="img-icon-butaWarna mb-2 mb-sm-0">
-                                            <div class="card-text ms-sm-4">
+                                        <div class="col-8 col-md-8 col-lg-9 d-flex align-items-center flex-row text-start gap-2 gap-sm-3">
+                                            <img src="/src/assets/logo/protanopiaIcon.png" alt="Protanopia" class="img-icon-butaWarna flex-shrink-0">
+                                            <div class="card-text min-width-0">
                                                 <h5 class="mb-1"><b>Protanopia</b></h5>
                                                 <span class="text-muted">Tampilan untuk buta warna merah (protan).</span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
+                                        <div class="col-4 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
                                             <label class="custom-select w-100-sm">
                                                 <input type="radio" name="pilihan_berita" value="protanopia">
                                                 <span class="select-button w-100 justify-content-center">
@@ -64,14 +64,14 @@ function renderDanInisialisasiModal() {
                             <div class="card deuteranopiaPreferensi rounded-4 mb-3">
                                 <div class="card-body">
                                     <div class="row align-items-center g-3">
-                                        <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center flex-column flex-sm-row text-center text-sm-start">
-                                            <img src="/src/assets/logo/deuteranopiaIcon.png" alt="Deuteranopia" class="img-icon-butaWarna mb-2 mb-sm-0">
-                                            <div class="card-text ms-sm-4">
+                                        <div class="col-8 col-md-8 col-lg-9 d-flex align-items-center flex-row text-start gap-2 gap-sm-3">
+                                            <img src="/src/assets/logo/deuteranopiaIcon.png" alt="Deuteranopia" class="img-icon-butaWarna flex-shrink-0">
+                                            <div class="card-text min-width-0">
                                                 <h5 class="mb-1"><b>Deuteranopia</b></h5>
                                                 <span class="text-muted">Tampilan untuk buta warna hijau.</span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
+                                        <div class="col-4 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
                                             <label class="custom-select w-100-sm">
                                                 <input type="radio" name="pilihan_berita" value="deuteranopia">
                                                 <span class="select-button w-100 justify-content-center">
@@ -86,14 +86,14 @@ function renderDanInisialisasiModal() {
                             <div class="card tritanopiaPreferensi rounded-4 mb-3">
                                 <div class="card-body">
                                     <div class="row align-items-center g-3">
-                                        <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center flex-column flex-sm-row text-center text-sm-start">
-                                            <img src="/src/assets/logo/tritanopiaIcon.png" alt="Tritanopia" class="img-icon-butaWarna mb-2 mb-sm-0">
-                                            <div class="card-text ms-sm-4">
+                                        <div class="col-8 col-md-8 col-lg-9 d-flex align-items-center flex-row text-start gap-2 gap-sm-3">
+                                            <img src="/src/assets/logo/tritanopiaIcon.png" alt="Tritanopia" class="img-icon-butaWarna flex-shrink-0">
+                                            <div class="card-text min-width-0">
                                                 <h5 class="mb-1"><b>Tritanopia</b></h5>
                                                 <span class="text-muted">Tampilan untuk buta warna biru dan kuning.</span>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
+                                        <div class="col-4 col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
                                             <label class="custom-select w-100-sm">
                                                 <input type="radio" name="pilihan_berita" value="tritanopia">
                                                 <span class="select-button w-100 justify-content-center">
@@ -120,7 +120,7 @@ function renderDanInisialisasiModal() {
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="row g-4 shortcut-list">
-                            <div class="col-12 col-md-6 border-end-md">
+                            <div class="col-6 border-end-md">
                                 <div class="d-flex flex-column gap-4 pe-md-3">
                                     <div class="shortcut-item">
                                         <span class="shortcut-label">Nonaktifkan Suara</span>
@@ -135,6 +135,22 @@ function renderDanInisialisasiModal() {
                                         </div>
                                     </div>
                                     <div class="shortcut-item">
+                                        <span class="shortcut-label">Buka Keyboard Shortcut</span>
+                                        <div class="shortcut-keys">
+                                            <kbd>ALT</kbd> <span>+</span> <kbd>H</kbd>
+                                        </div>
+                                    </div>
+                                    <div class="shortcut-item">
+                                        <span class="shortcut-label">Menuju Halaman Berita</span>
+                                        <div class="shortcut-keys">
+                                            <kbd>ALT</kbd> <span>+</span> <kbd>B</kbd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column gap-4 ps-md-3">
+                                    <div class="shortcut-item">
                                         <span class="shortcut-label">Berita Sebelumnya</span>
                                         <div class="shortcut-keys">
                                             <kbd>ALT</kbd> <span>+</span> <kbd><i class="bi bi-arrow-left-square"></i></kbd>
@@ -146,32 +162,16 @@ function renderDanInisialisasiModal() {
                                             <kbd>ALT</kbd> <span>+</span> <kbd><i class="bi bi-arrow-right-square"></i></kbd>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="d-flex flex-column gap-4 ps-md-3">
                                     <div class="shortcut-item">
-                                        <span class="shortcut-label">Membuka Panduan Shortcut</span>
-                                        <div class="shortcut-keys">
-                                            <kbd>ALT</kbd> <span>+</span> <kbd>H</kbd>
-                                        </div>
-                                    </div>
-                                    <div class="shortcut-item">
-                                        <span class="shortcut-label">Membesar Ukuran Teks</span>
+                                        <span class="shortcut-label">Membesar Teks</span>
                                         <div class="shortcut-keys">
                                             <kbd>ALT</kbd> <span>+</span> <kbd><i class="bi bi-arrow-up-square"></i></kbd>
                                         </div>
                                     </div>
                                     <div class="shortcut-item">
-                                        <span class="shortcut-label">Mengecilkan Ukuran Teks</span>
+                                        <span class="shortcut-label">Mengecilkan Teks</span>
                                         <div class="shortcut-keys">
                                             <kbd>ALT</kbd> <span>+</span> <kbd><i class="bi bi-arrow-down-square"></i></kbd>
-                                        </div>
-                                    </div>
-                                    <div class="shortcut-item">
-                                        <span class="shortcut-label">Menuju Halaman Berita</span>
-                                        <div class="shortcut-keys">
-                                            <kbd>ALT</kbd> <span>+</span> <kbd>B</kbd>
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +212,9 @@ function renderDanInisialisasiModal() {
   const temaTersimpan = localStorage.getItem("temaAksesibilitas");
   if (temaTersimpan) {
     document.documentElement.setAttribute("data-theme", temaTersimpan);
-    const radioCocok = document.querySelector(`input[name="pilihan_berita"][value="${temaTersimpan}"]`);
+    const radioCocok = document.querySelector(
+      `input[name="pilihan_berita"][value="${temaTersimpan}"]`,
+    );
     if (radioCocok) radioCocok.checked = true;
   }
 

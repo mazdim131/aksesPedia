@@ -71,7 +71,7 @@ body {
 }
 
 .btn-hero-option .btn-primary-custom {
-  background-color: #0d6efd;
+  background-color: var(--btn-hero-index);
   color: #ffffff;
 }
 .btn-hero-option .btn-primary-custom:hover {
@@ -490,10 +490,6 @@ body {
   
   .custom-select .select-button {
     padding: 12px; 
-  }
-
-  .card-text {
-    margin-top: 5px;
   }
 }
 

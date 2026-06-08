@@ -1,11 +1,10 @@
-const newsData = {
+var newsData = {
   hero: {
     // paling atas
     tag: "Haji 2026",
     title: "Cerita Ibadah Haji\ndi Tanah Suci",
     description: "Kumpulan berita-berita, foto, video dan infografis tentang pelaksanaan ibadah haji 1447 M/2026 H.",
     mainImage: "/src/assets/assetBeritaHero/HeroPalingAtas/FotoMekkah.jpg",
-
 
     // ini yang di bawah tranding paling atas // sub berita
     subNews: [

@@ -146,7 +146,7 @@ content.innerHTML = `
             <div class="card-body-custom">
               <h3 class="card-title-custom">Bagaimana Gaya Hidup Sehat Ala Remaja?</h3>
               <p class="card-tag">Gaya Hidup Sehat</p>
-              <div class="card-action">
+              <div class="card-action" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=0'" role="button">
                 <span class="icon-play"><i class="bi bi-play-fill"></i></span>
                 <span class="action-text">Dengarkan</span>
               </div>
@@ -163,7 +163,7 @@ content.innerHTML = `
             <div class="card-body-custom">
               <h3 class="card-title-custom">5 Cara Meningkatkan Mood Belajar, Dijamin Nggak Gampang Bosan!</h3>
               <p class="card-tag">Menghilangkan Malas Belajar</p>
-              <div class="card-action">
+              <div class="card-action" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=1'" role="button">
                 <span class="icon-play"><i class="bi bi-play-fill"></i></span>
                 <span class="action-text">Dengarkan</span>
               </div>
@@ -180,7 +180,7 @@ content.innerHTML = `
             <div class="card-body-custom">
               <h3 class="card-title-custom">Jenis Makanan Appetizer, Main Course, dan Dessert, Apa Bedanya?</h3>
               <p class="card-tag">Belajar Memasak</p>
-              <div class="card-action">
+              <div class="card-action" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=2'" role="button">
                 <span class="icon-play"><i class="bi bi-play-fill"></i></span>
                 <span class="action-text">Dengarkan</span>
               </div>
@@ -197,7 +197,7 @@ content.innerHTML = `
             <div class="card-body-custom">
               <h3 class="card-title-custom">5 Alasan Harus Memilih Jurusan Rekayasa Perangkat Lunak</h3>
               <p class="card-tag">Motivasi</p>
-              <div class="card-action">
+              <div class="card-action" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=3'" role="button">
                 <span class="icon-play"><i class="bi bi-play-fill"></i></span>
                 <span class="action-text">Dengarkan</span>
               </div>
@@ -214,7 +214,7 @@ content.innerHTML = `
             <div class="card-body-custom">
               <h3 class="card-title-custom">Cara Check In Hotel dan Panduan Reservasinya untuk Pemula</h3>
               <p class="card-tag">Tips dan Trik</p>
-              <div class="card-action">
+              <div class="card-action" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=4'" role="button">
                 <span class="icon-play"><i class="bi bi-play-fill"></i></span>
                 <span class="action-text">Dengarkan</span>
               </div>
