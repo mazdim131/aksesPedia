@@ -1,13 +1,14 @@
 body {
   background-color: var(--bg-body) !important;
   overflow-x: hidden;
+  color: var(--color-body-text) !important;
 }
 
 /* ==== Bagian Hero Container ==== */
 .container-hero {
   padding: 40px;
   margin-top: 4%;
-  background-color: #06152d;
+  background-color: var(--bg-card);
   border-radius: 20px 80px 20px 80px;
   overflow: hidden;
   position: relative;
@@ -22,7 +23,7 @@ body {
 }
 
 .hero-description {
-  color: #e2e8f0 !important;
+  color: var(--color-card-text) !important;
   font-weight: 400;
   line-height: 1.6;
   max-width: 100%;
@@ -43,7 +44,7 @@ body {
 
 .badge-inner-dark {
   background-color: #4a5568;
-  color: #ffffff;
+  color: var(--color-card-text);
   font-size: 12px;
   font-weight: 700;
   border-radius: 100px;
@@ -52,7 +53,7 @@ body {
 }
 
 .badge-text-action {
-  color: #06152d;
+  color: var(--color-body-text);
   font-size: 13px;
   font-weight: 700;
   padding: 0 12px;
@@ -81,11 +82,11 @@ body {
 
 .btn-hero-option .btn-light-custom {
   background-color: #ffffff;
-  color: #06152d;
+  color: var(--color-body-text);
 }
 .btn-hero-option .btn-light-custom:hover {
   background-color: #f1f5f9;
-  color: #06152d !important;
+  color: var(--color-body-text) !important;
   transform: translateY(-2px);
 }
 
@@ -105,7 +106,7 @@ body {
 /* ==== Bagian Grid Berita Utama ==== */
 .badge-category {
   background-color: #ffffff;
-  color: #000000;
+  color: var(--color-body-text);
   font-weight: 700;
   font-size: 12px;
   padding: 6px 14px;
@@ -141,7 +142,7 @@ body {
 
 .badge-floating-title {
   font-size: 16px;
-  color: #000000;
+  color: var(--color-body-text);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
 }
 
@@ -161,14 +162,15 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
-  color: #000000;
+  color: var(--color-body-text);
   display: -webkit-box;
   overflow: hidden;
 }
 
 .small-text {
   font-size: 11px;
-  color: #8c8c8c !important;
+  color: var(--color-body-text) !important;
+  opacity: 0.6;
 }
 
 .brand-logo img {
@@ -180,14 +182,14 @@ body {
 /* ==== Bagian Container Kategori Berita ==== */
 .container-category {
   margin-top: 5%;
-  background-color: #06152d;
+  background-color: var(--bg-card);
   padding: 50px 30px;
   border-radius: 30px 30px 80px 30px;
 }
 
 .badge-hot-news {
   background-color: #ffffff;
-  color: #06152d;
+  color: var(--color-body-text);
   font-size: 11px;
   font-weight: 800;
   padding: 6px 16px;
@@ -198,10 +200,12 @@ body {
 .category-title {
   font-size: 2.2rem;
   font-weight: 800;
+  color: var(--color-card-text);
 }
 
 .category-subtitle {
-  color: #a0aec0;
+  color: var(--color-card-text);
+  opacity: 0.75;
   font-size: 1rem;
 }
 
@@ -231,8 +235,8 @@ body {
 }
 
 .icon-wrapper {
-  background-color: #06152d;
-  color: #ffffff;
+  background-color: var(--bg-card);
+  color: var(--color-card-text);
   width: 50px;
   height: 50px;
   border-radius: 12px;
@@ -244,7 +248,7 @@ body {
 }
 
 .card-label {
-  color: #06152d;
+  color: var(--color-body-text);
   font-weight: 700;
   font-size: 14px;
 }
@@ -377,10 +381,195 @@ body {
   bottom: 12px;
   left: 12px;
   background-color: rgba(255, 255, 255, 0.9);
-  color: #1a1a1a;
+  color: black;
   font-size: 11px !important;
   font-weight: 700;
   padding: 4px 10px;
   border-radius: 6px;
   z-index: 2;
 }
+
+
+
+/* ==== bagian modal ==== */
+.modal-content {
+  padding: 15px;
+}
+
+@media (min-width: 576px) {
+  .modal-content {
+    padding: 25px;
+  }
+}
+
+.img-icon-butaWarna {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .img-icon-butaWarna {
+    height: 38px;
+  }
+}
+
+.card-text h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-text span {
+  font-size: 13px;
+}
+
+.custom-select {
+  display: inline-block;
+}
+
+.custom-select input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-select .select-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 24px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: var(--color-body-text);
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.custom-select .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d1b2a; 
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  flex-shrink: 0; 
+}
+
+.custom-select input[type="radio"]:checked + .select-button .circle {
+  background-color: #ffffff; 
+  border: 5px solid #0d1b2a; 
+}
+
+.custom-select input[type="radio"]:checked + .select-button {
+  border-color: #0d1b2a;
+  background-color: #f8f9fa;
+}
+
+.custom-select:hover .select-button {
+  transform: translateY(-1px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+#btnSimpanPreferensi {
+  background-color: #06152d !important;
+  border: none;
+}
+
+@media (max-width: 575.98px) {
+  .w-100-sm {
+    width: 100%;
+  }
+  
+  .custom-select .select-button {
+    padding: 12px; 
+  }
+
+  .card-text {
+    margin-top: 5px;
+  }
+}
+
+
+/* Styling List Shortcut */
+.shortcut-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.shortcut-label {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-body-text);
+}
+
+.shortcut-keys {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0; 
+}
+
+.shortcut-keys span {
+  font-weight: bold;
+  color: var(--color-body-text);
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 35px;
+  padding: 0 8px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-body-text) !important;
+  background-color: #ffffff !important; 
+  border: 1px solid #333333;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .border-end-md {
+    border-end: 1px solid #dee2e6;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .modal-body {
+    padding: 25px 20px !important;
+  }
+  
+  .shortcut-item {
+    flex-wrap: wrap; 
+    gap: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #eee; 
+  }
+
+  .shortcut-label {
+    width: 100%; 
+    font-size: 14px;
+  }
+  
+  .shortcut-keys {
+    width: 100%;
+    justify-content: flex-start; 
+    margin-top: 2px;
+  }
+}
+

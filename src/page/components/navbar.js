@@ -14,9 +14,9 @@ bilahNavigasi.innerHTML = `
 
         <div class="collapse navbar-collapse" id="menuNavigasi">
           <ul class="navbar-nav ms-auto align-items-center gap-3 mt-4 mt-lg-0 w-100 justify-content-lg-end text-center">
-            <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Beranda</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Tentang Kami</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Hubungi Kami</a></li>
+            <li class="nav-item"><a class="nav-link text-white fw-bold" href="/index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/about.html">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/contact.html">Hubungi Kami</a></li>
             
             <li class="nav-item dropdown dropdown-perbaikan-mobile mt-2 mt-lg-0">
               <button class="btn btn-light rounded-pill px-4 py-2 d-flex align-items-center gap-2 fw-bold mx-auto" 
@@ -61,11 +61,20 @@ bilahNavigasi.innerHTML = `
                       <span class="kotak-warna warna-protanopia"></span>
                       <span class="text-dark">Protanopia</span>
                     </label>
+                    <label class="d-flex align-items-center gap-4 label-pilihan">
+                      <input type="radio" name="modeWarna" value="tritanopia" class="form-check-input d-none">
+                      <span class="kotak-warna warna-tritanopia"></span>
+                      <span class="text-dark">Tritanopia</span>
+                    </label>
                   </div>
                 </div>
 
                 <button type="button" class="btn tombol-terapkan w-100 fw-bold py-3 rounded-3" id="tombolTerapkan">
                   Terapkan
+                </button>
+                <button type="button" class="btn btn-outline-dark w-100 fw-bold py-3 rounded-3 d-flex align-items-center justify-content-center gap-2 mt-3" id="tombolTunaNetra">
+                  <i class="bi bi-volume-up-fill"></i>
+                  <span>Mode Tuna Netra</span>
                 </button>
               </div>
             </li>
@@ -149,6 +158,16 @@ function inisialisasiFiturAksesibilitas() {
         document.documentElement.removeAttribute("data-theme");
         localStorage.removeItem("temaAksesibilitas");
       }
+      return;
+    }
+    const tombolTunaNetra = e.target.closest("#tombolTunaNetra");
+    if (tombolTunaNetra) {
+      if (typeof aktifkanModeTunaNetra === "function") {
+        aktifkanModeTunaNetra();
+      }
+      const dropdown = bootstrap.Dropdown.getInstance(document.getElementById("tombolAksesibilitas"));
+      if (dropdown) dropdown.hide();
+      return;
     }
   });
 }

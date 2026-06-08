@@ -12,17 +12,17 @@ footer.innerHTML = `
                     <h5>ksesPedia</h5>
                 </div>
 
-                <p>
+                <p class="text-white">
                     Menghapus sekat digital, merayakan kesetaraan informasi lewat suara.
                 </p>
 
-                <a href="#" class="btn btn-light">Panduan Pengguna</a>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Keyboar Shortcut</buttoclass=>
 
             </div>
 
             <div class="footer-menu">
 
-                <a href="#">Beranda</a>
+                <a href="/index.html">Beranda</a>
                 <a href="#">Berita</a>
                 <a href="#">Hubungi Kami</a>
                 <a href="#">Tentang Kami</a>
@@ -33,7 +33,7 @@ footer.innerHTML = `
 
         <div class="footer-bottom">
 
-            <p>Copyright 2026 | All Rights Reserved</p>
+            <p class="text-white">Copyright 2026 | All Rights Reserved</p>
 
             <div class="social-icons">
 
