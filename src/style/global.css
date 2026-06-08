@@ -6,6 +6,8 @@
   --color-card-text: white;
   --bg-button-play: white;
   --icon-play: #06152d;
+
+  --color-icon-about: black;
 }
 
 [data-theme="deuteranomali"] {
@@ -16,6 +18,8 @@
   --color-card-text: white;
   --bg-button-play: white;
   --icon-play: #06152d;
+
+  --color-icon-about: white;
 }
 
 [data-theme="protanomali"],
@@ -27,6 +31,8 @@
   --color-card-text: white;
   --bg-button-play: white;
   --icon-play: #06152d;
+
+  --color-icon-about: white;
 }
 
 [data-theme="deuteranopia"] {
@@ -37,6 +43,8 @@
   --color-card-text: white;
   --bg-button-play: white;
   --icon-play: #06152d;
+
+  --color-icon-about: white;
 }
 
 [data-theme="tritanopia"] {
@@ -47,6 +55,8 @@
   --color-card-text: white;
   --bg-button-play: #06152d;
   --icon-play: white;
+
+  --color-icon-about: black;
 }
 
 .kotak-warna {
