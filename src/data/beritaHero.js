@@ -4,9 +4,54 @@ const newsData = {
     tag: "Haji 2026",
     title: "Cerita Ibadah Haji\ndi Tanah Suci",
     description: "Kumpulan berita-berita, foto, video dan infografis tentang pelaksanaan ibadah haji 1447 M/2026 H.",
+    FotoProfile: "/src/assets/fotoProfile/FotoBahlil.png",
+    Penulis: "Ihsan Mubina",
+    date: "21 Juli 2023",
     mainImage: "/src/assets/assetBeritaHero/HeroPalingAtas/FotoMekkah.jpg",
+    deskripsi: `
+    <p>
+      Setiap tahun, jutaan umat Muslim dari seluruh dunia berkumpul di Mekkah untuk melaksanakan ibadah haji, salah satu rukun Islam yang wajib dipenuhi. Momen sakral ini menjadi kesempatan bagi para jemaah untuk mendekatkan diri kepada Allah SWT, memohon ampunan, serta memperkuat keimanan. Prosesi haji yang berlangsung selama beberapa hari melibatkan serangkaian ritual yang penuh makna dan spiritualitas.
+    </p>
 
+    <h2>Persiapan Menuju Tanah Suci</h2>
 
+    <p>
+      Sebelum berangkat ke Tanah Suci, para jemaah biasanya melakukan persiapan matang, baik secara fisik, mental, maupun spiritual. Persiapan ini mencakup pemahaman tentang tata cara haji, menjaga kesehatan, serta mempersiapkan mental untuk menghadapi perjalanan panjang dan keramaian. Bagi sebagian orang, persiapan ini juga melibatkan pelunasan biaya haji, pengurusan dokumen, serta mengikuti manasik haji untuk memahami setiap tahapan ibadah yang akan dijalani.
+    </p>
+
+    <span class="article-quote">
+      "Setiap langkah dalam ibadah haji memiliki makna mendalam yang mengajarkan tentang kesabaran, keikhlasan, dan persatuan umat Muslim."
+    </span>
+
+    <h2>Prosesi Ibadah Haji</h2>
+
+    <p>
+      Ibadah haji dimulai dengan niat ihram di miqat, yaitu batas tertentu di luar Mekkah. Para jemaah mengenakan pakaian ihram yang sederhana, melambangkan kesetaraan di hadapan Allah SWT. Setelah itu, dilanjutkan dengan tawaf mengelilingi Ka'bah sebanyak tujuh kali, sebagai simbol penghormatan kepada Allah. Tawaf ini mencerminkan persatuan umat Muslim dari berbagai latar belakang yang berkumpul untuk menyembah satu Tuhan yang sama.
+    </p>
+
+    <p>
+      Selanjutnya, jemaah melakukan sai antara bukit Safa dan Marwah, mengenang perjuangan Siti Hajar mencari air untuk putranya, Ismail. Ritual ini mengajarkan tentang ketekunan, harapan, dan keikhlasan dalam menghadapi kesulitan. Puncak dari ibadah haji adalah wukuf di Padang Arafah pada tanggal 9 Dzulhijjah, di mana para jemaah memohon ampunan dan berdoa sepuasnya. Momen ini menjadi simbol kebersamaan umat Muslim dalam menghadapi hari perhitungan.
+    </p>
+
+    <h2>Makna Spiritual dan Persatuan Umat</h2>
+
+    <p>
+      Lebih dari sekadar ritual fisik, ibadah haji memiliki makna spiritual yang mendalam. Haji mengajarkan tentang kesederhanaan, pengorbanan, dan persatuan umat Muslim. Di Tanah Suci, tidak ada perbedaan status sosial, kekayaan, atau jabatan; semua jemaah mengenakan pakaian yang sama dan melakukan ibadah bersama-sama. Hal ini mengingatkan bahwa di hadapan Allah SWT, semua manusia adalah sama.
+    </p>
+
+    <p>
+      Selain itu, haji juga mengajarkan tentang pentingnya menjaga kebersihan, ketertiban, dan saling menghormati sesama jemaah. Dengan jumlah jutaan orang yang berkumpul di satu tempat, diperlukan kesabaran dan kerja sama agar ibadah dapat berjalan lancar. Pengalaman ini sering kali mengubah cara pandang jemaah terhadap kehidupan, membuat mereka lebih bersyukur, rendah hati, dan peduli terhadap sesama.
+    </p>
+
+    <h2>Dampak Ibadah Haji bagi Jemaah</h2>
+
+    <p>
+      Setelah menyelesaikan seluruh rangkaian ibadah haji, para jemaah kembali ke negara masing-masing dengan gelar "Haji" atau "Hajjah", sebagai tanda penghormatan atas ibadah yang telah mereka tunaikan. Namun, dampak haji tidak berhenti pada gelar tersebut. Banyak jemaah yang merasakan perubahan signifikan dalam kehidupan mereka, termasuk peningkatan spiritualitas, rasa syukur yang lebih dalam, serta komitmen yang lebih kuat untuk menjalankan ajaran Islam dalam kehidupan sehari-hari.
+    </p>
+
+    <p>
+      Pengalaman beribadah di Tanah Suci sering kali menjadi motivasi bagi jemaah untuk menjadi pribadi yang lebih baik, lebih sabar, dan lebih peduli terhadap sesama. Kisah-kisah inspiratif dari para jemaah haji terus menginspirasi banyak orang untuk mempersiapkan diri dan berusaha melaksanakan ibadah haji suatu saat nanti.
+    </p`,
     // ini yang di bawah tranding paling atas // sub berita
     subNews: [
       {
@@ -93,7 +138,6 @@ const newsData = {
       {
         title: "Suasana Masjidil Haram Jelang Puncak Haji 2024",
         FotoProfile: "/src/assets/fotoProfile/FotoBahlil.png",
-
         Penulis: "Ihsan Mubina",
         date: "21 Juli 2023",
         category: "Internasional",
@@ -1089,7 +1133,7 @@ const newsData = {
       FotoProfile: "/src/assets/fotoProfile/FotoBahlil.png",
       Penulis: "Ihsan Mubina",
       description: "Belajar",
-      image: "/src/assets/assBeritaHero/pilihanRedaksi/WaltuTerbaikUntukBelajar.jpg",
+      image: "/src/assets/assetBeritaHero/pilihanRedaksi/WaktuTerbaikUntukBelajar.jpg",
       deskripsi: `<p>
         Setiap orang memiliki waktu belajar yang berbeda-beda sesuai dengan kebiasaan dan kondisi tubuhnya. Namun, memilih waktu yang tepat untuk belajar dapat membantu meningkatkan fokus, daya ingat, dan pemahaman terhadap materi. Oleh karena itu, penting untuk mengetahui kapan tubuh dan pikiran berada dalam kondisi terbaik untuk menerima informasi baru.
       </p>
