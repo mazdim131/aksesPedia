@@ -76,16 +76,16 @@ content.innerHTML = `
 
 
                 <div class="quotes-container">
-                    <!-- Dimas -->
+                    <!-- Hifzhi -->
                     <div class="quote-card card-green">
                         <p class="quote-text">"Jangan habiskan energimu untuk mengejar jejak kaki orang lain. Setiap
                             orang
                             punya garis start dan waktu finish yang berbeda."</p>
                         <div class="profile-area">
                             <div class="circle-user">
-                                <img src="../../assets/dimas-formal.png" alt="Foto Dimas Hadi Syandana">
+                                <img src="../../assets/hifzhi-formal.png" alt="Foto Dimas Hadi Syandana">
                             </div>
-                            <p class="profile-info"><strong>Dimas Hadi Syandana</strong><br><span>SMK Wikrama
+                            <p class="profile-info"><strong>Mochammad Hizhi Syaukani</strong><br><span>SMK Wikrama
                                     Bogor</span>
                             </p>
                         </div>
@@ -105,14 +105,14 @@ content.innerHTML = `
                     </div>
 
 
-                    <!-- Hifzhi -->
+                    <!-- Dimas -->
                     <div class="quote-card card-orange">
-                        <p class="quote-text">Sudah terwujud jangan lupa bersujud</p>
+                        <p class="quote-text">"Sudah terwujud jangan lupa bersujud"</p>
                         <div class="profile-area">
                             <div class="circle-user">
-                                <img src="../../assets/hifzhi-formal.png" alt="Foto Mochammad Hifzhi Syaukani">
+                                <img src="../../assets/dimas-formal.png" alt="Foto Mochammad Hifzhi Syaukani">
                             </div>
-                            <p class="profile-info"><strong>Mochammad Hifzhi Syaukani</strong><br><span>SMK Wikrama
+                            <p class="profile-info"><strong>Dimas Hadi Syahdana</strong><br><span>SMK Wikrama
                                     Bogor</span></p>
                         </div>
                     </div>
