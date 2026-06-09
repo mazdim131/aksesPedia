@@ -1,6 +1,6 @@
 const bilahNavigasi = document.getElementById("navbar");
 bilahNavigasi.innerHTML = `
-<nav class="navbar navbar-expand-lg mt-3 navigasi-kustom rounded-5">
+<nav class="navbar navbar-expand-lg mt-1 navigasi-kustom rounded-5">
   <div class="container-fluid rounded-5 px-4 py-2 d-flex align-items-center justify-content-between">
     
     <div class="d-flex align-items-center">
@@ -15,6 +15,7 @@ bilahNavigasi.innerHTML = `
         <div class="collapse navbar-collapse" id="menuNavigasi">
           <ul class="navbar-nav ms-auto align-items-center gap-3 mt-4 mt-lg-0 w-100 justify-content-lg-end text-center">
             <li class="nav-item"><a class="nav-link text-white fw-bold" href="/index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/Hero.html">Berita</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/about.html">Tentang Kami</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/contact.html">Hubungi Kami</a></li>
             
@@ -69,10 +70,10 @@ bilahNavigasi.innerHTML = `
                   </div>
                 </div>
 
-                <button type="button" class="btn tombol-terapkan w-100 fw-bold py-3 rounded-3" id="tombolTerapkan">
+                <button type="button" class="btn btn-outline-secondary w-100 fw-bold py-3 rounded-3" id="tombolTerapkan">
                   Terapkan
                 </button>
-                <button type="button" class="btn btn-outline-dark w-100 fw-bold py-3 rounded-3 d-flex align-items-center justify-content-center gap-2 mt-3" id="tombolTunaNetra">
+                <button type="button" class="btn tombol-terapkan w-100 fw-bold py-3 rounded-3 d-flex align-items-center justify-content-center gap-2 mt-3" id="tombolTunaNetra">
                   <i class="bi bi-volume-up-fill"></i>
                   <span>Mode Tuna Netra</span>
                 </button>
@@ -173,3 +174,12 @@ function inisialisasiFiturAksesibilitas() {
 }
 
 inisialisasiFiturAksesibilitas();
+
+const currentPath = window.location.pathname;
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  const linkPath = link.getAttribute('href');
+  if (linkPath === currentPath || 
+      (linkPath === '/index.html' && (currentPath === '/' || currentPath === '/index.html'))) {
+    link.classList.add('fw-bold');
+  }
+});

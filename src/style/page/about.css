@@ -81,6 +81,7 @@ img {
 }
 
 .stat-number {
+  padding-top: 30px;
   font-size: 48px;
   font-weight: 700;
   line-height: 1;
@@ -321,6 +322,7 @@ img {
 .profile-info strong {
   font-weight: 700;
 }
+
 .profile-info span {
   font-weight: 400;
   opacity: 0.9;

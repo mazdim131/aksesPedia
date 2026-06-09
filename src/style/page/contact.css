@@ -22,7 +22,7 @@ body {
     width: 100%;
     max-width: 1300px;
     display: flex;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
     padding: 25px;
     box-sizing: border-box;
     gap: 30px;
@@ -233,6 +233,26 @@ body {
     opacity: 0.7;
     transition: opacity 0.3s;
 }
+
+.btn-back {
+    background: none;
+    border: none;
+    color: var(--color-body-text);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    padding: 0;
+    transition: transform 0.2s;
+}
+
+.btn-back:hover {
+    transform: translateX(-5px);
+}
+
 
 @media (max-width: 900px) {
     .main-card {

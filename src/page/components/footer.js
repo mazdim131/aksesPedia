@@ -16,16 +16,16 @@ footer.innerHTML = `
                     Menghapus sekat digital, merayakan kesetaraan informasi lewat suara.
                 </p>
 
-                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Keyboard Shortcut</buttoclass=>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalKeyboardShortCut">Keyboar Shortcut</buttoclass=>
 
             </div>
 
             <div class="footer-menu">
 
                 <a href="/index.html">Beranda</a>
-                <a href="#">Berita</a>
-                <a href="#">Hubungi Kami</a>
-                <a href="#">Tentang Kami</a>
+                <a href="/src/page/structure/Hero.html">Berita</a>
+                <a href="/src/page/structure/contact.html">Hubungi Kami</a>
+                <a href="/src/page/structure/about.html">Tentang Kami</a>
 
             </div>
 
