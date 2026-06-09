@@ -14,7 +14,7 @@ bilahNavigasi.innerHTML = `
 
         <div class="collapse navbar-collapse" id="menuNavigasi">
           <ul class="navbar-nav ms-auto align-items-center gap-3 mt-4 mt-lg-0 w-100 justify-content-lg-end text-center">
-            <li class="nav-item"><a class="nav-link text-white fw-bold" href="/index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/index.html">Beranda</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/Hero.html">Berita</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/about.html">Tentang Kami</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/contact.html">Hubungi Kami</a></li>
@@ -175,11 +175,22 @@ function inisialisasiFiturAksesibilitas() {
 
 inisialisasiFiturAksesibilitas();
 
-const currentPath = window.location.pathname;
-document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-  const linkPath = link.getAttribute('href');
-  if (linkPath === currentPath || 
-      (linkPath === '/index.html' && (currentPath === '/' || currentPath === '/index.html'))) {
-    link.classList.add('fw-bold');
-  }
-});
+setTimeout(() => {
+  const isDetailPage = !!document.getElementById('detailTitle');
+
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.classList.remove('fw-bold');
+  });
+
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    const linkPath = link.getAttribute('href');
+
+    if (isDetailPage && linkPath.includes('Hero.html')) {
+      link.classList.add('fw-bold');
+    } else if (linkPath === window.location.pathname) {
+      link.classList.add('fw-bold');
+    } else if (linkPath === '/index.html' && (window.location.pathname === '/' || window.location.pathname === '/index.html')) {
+      link.classList.add('fw-bold');
+    }
+  });
+}, 50);

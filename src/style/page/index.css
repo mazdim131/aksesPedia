@@ -106,7 +106,7 @@ body {
 /* ==== Bagian Grid Berita Utama ==== */
 .badge-category {
   background-color: #ffffff;
-  color: var(--color-body-text);
+  color: black;
   font-weight: 700;
   font-size: 12px;
   padding: 6px 14px;
@@ -142,7 +142,7 @@ body {
 
 .badge-floating-title {
   font-size: 16px;
-  color: var(--color-body-text);
+  color: black;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
 }
 
