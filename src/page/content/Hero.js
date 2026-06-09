@@ -177,7 +177,6 @@ function renderPilihanRedaksi() {
 
 
 // PLAYER CONTROLS (toggle play/pause)
-// PLAYER CONTROLS (toggle play/pause dengan Sistem Antrean Kalimat)
 function initPlayerControls() {
     let currentPlayingBtn = null;
     let utteranceQueue = []; // Menyimpan potongan kalimat agar browser tidak crash
@@ -292,10 +291,9 @@ function initPlayerControls() {
 
                 if (data) {
                     const tempDiv = document.createElement('div');
-                    // Mendukung fleksibilitas penamaan properti 'deskripsi' atau 'description'
                     tempDiv.innerHTML = data.deskripsi || data.description || '';
 
-                    // Bersihkan tabulasi spasi liar akibat format template literals
+                    // untuk membersihkan hastag liar kayak yang template literal
                     let rawText = tempDiv.textContent || tempDiv.innerText || '';
                     rawText = rawText.replace(/\s+/g, ' ').trim();
 
