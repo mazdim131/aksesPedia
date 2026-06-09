@@ -1,11 +1,5 @@
  const content = document.getElementById("main");
 content.innerHTML = `
-        <section class="hero-section">
-            <h1 class="main-headline">Sekilas Tentang Kami</h1>
-            <p class="main-tagline">Kami hadir di tengah arus informasi untuk menyajikan berita cepat, akurat, dan
-                terpercaya.</p>
-        </section>
-
 
         <!-- foto bento -->
         <div class="bento-grid">
