@@ -1,4 +1,4 @@
-const content = document.getElementById("main");
+ const content = document.getElementById("main");
 content.innerHTML = `
         <section class="hero-section">
             <h1 class="main-headline">Sekilas Tentang Kami</h1>
