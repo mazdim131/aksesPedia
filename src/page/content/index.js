@@ -14,7 +14,7 @@ content.innerHTML = `
         <p class="hero-description mb-4 text-center text-lg-start">Dengarkan kisah, dapatkan informasi krusial, dan pelajari praktik aksesibilitas terbaik untuk menciptakan dunia digital yang adil bagi semua.</p>
         <div class="d-flex flex-wrap gap-3 btn-hero-option justify-content-center justify-content-lg-start">
           <button type="button" class="btn btn-primary-custom d-flex align-items-center justify-content-center" onclick="window.location.href='/src/page/structure/Hero.html'">Mulai Membaca <i class="bi bi-arrow-right ms-2"></i></button>
-          <button class="btn btn-light-custom d-flex align-items-center justify-content-center text-dark">Pelajari Lebih Lanjut</button>
+          <button class="btn btn-light-custom d-flex align-items-center justify-content-center text-dark" onclick="window.location.href='/src/page/structure/about.html'">Pelajari Lebih Lanjut</button>
         </div>
       </div>
       
