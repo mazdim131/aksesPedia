@@ -146,4 +146,20 @@
     max-width: 340px !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
   }
+
+  .navbar-nav {
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav .dropdown-perbaikan-mobile {
+    display: flex;
+    justify-content: center;
+  }
 }

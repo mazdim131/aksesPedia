@@ -11,8 +11,9 @@ content.innerHTML = `
                 </button>
 
                 <div class="header-form">
-                    <img class="logo-aksespedia" src="https://c.animaapp.com/mpm845f798Vnt1/img/image-109.png"
-                        alt="Logo" />
+                    <a href="/index.html">
+                        <img class="logo-aksespedia" src="https://c.animaapp.com/mpm845f798Vnt1/img/image-109.png" alt="Logo" />
+                    </a>
                     <h2>Hubungi Kami</h2>
                     <p>Kirimkan saran atau kendala Anda untuk bantu kami berkembang.</p>
                 </div>

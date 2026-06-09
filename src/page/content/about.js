@@ -1,5 +1,11 @@
  const content = document.getElementById("main");
 content.innerHTML = `
+        <section class="hero-section mt-5">
+            <h1 class="main-headline">Sekilas Tentang Kami</h1>
+            <p class="main-tagline">Kami hadir di tengah arus informasi untuk menyajikan berita cepat, akurat, dan
+                terpercaya.</p>
+        </section>
+
 
         <!-- foto bento -->
         <div class="bento-grid">
@@ -8,21 +14,17 @@ content.innerHTML = `
                 <p class="stat-desc">Berita yang memberitakan isu nasional dan internasional</p>
             </div>
 
-
             <div class="bento-item img-card card-hifzhi">
                 <img src="../../assets/hifzi-non-formal.png" alt="Foto Hifzhi">
             </div>
-
 
             <div class="bento-item img-card card-middle">
                 <img src="../../assets/dimas-non-formal.png" alt="Foto Dimas">
             </div>
 
-
             <div class="bento-item img-card card-prabu">
                 <img src="../../assets/prabu-non-formal.jpeg" alt="Foto Prabu">
             </div>
-
 
             <div class="bento-item stat-card blue-bg card-100">
                 <span class="stat-number">100+</span>

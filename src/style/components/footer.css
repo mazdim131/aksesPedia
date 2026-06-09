@@ -5,6 +5,7 @@ footer {
   border-radius: 20px 100px 20px 100px;
   padding: 60px 70px 30px;
   color: var(--color-card-text);
+  margin-bottom: 3%;
 }
 
 .footer-top {
