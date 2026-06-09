@@ -30,7 +30,7 @@ content.innerHTML = `
         <article class="featured-card" style="cursor:pointer" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=5'">
           <div class="position-relative overflow-hidden rounded-4 mb-3 image-featured-wrapper">
             <img src="/src/assets/newsAssets/arsenal-juara-liga-inggris-2025-2026.jpg" alt="Arsenal Juara" class="img-fluid w-100 featured-img">
-            <span class="badge-category position-absolute top-0 start-0 m-3">Olahraga</span>
+            <span class="badge-category text position-absolute top-0 start-0 m-3">Olahraga</span>
             <div class="badge-floating-title position-absolute bottom-0 start-0 m-3 m-lg-4 px-3 px-lg-4 py-2 bg-white rounded-3 shadow">
               Berita Olahraga <span class="fw-bold">Juara</span>
             </div>
