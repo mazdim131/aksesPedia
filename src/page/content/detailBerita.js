@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Parsing URL parameters
     const params = new URLSearchParams(window.location.search);
@@ -22,6 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
         data = newsData.beritaInklusif.grid[index];
     } else if (section === 'pilihanRedaksi' && index !== null) {
         data = newsData.pilihanRedaksi[index];
+    } else if (section === 'beritaIndex' && index !== null) {
+        const item = newsData.swiper[index];
+        if (item) {
+            data = {
+                image: item.fotoSampul,
+                title: item.title,
+                category: item.category,
+                date: item.tanggal,
+                deskripsi: item.deskripsi,
+                Penulis: item.Penulis,
+                FotoProfile: item.FotoProfile,
+            };
+        }
     }
 
     if (data) {
@@ -59,111 +71,136 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (detailDescription) {
-
-            // Ambil teks apa adanya dari beritaHero.js
+            // ini yang deskripsi di paling awal itu agar yang kepilih nya itu yang deskripsi bukan yang description
             detailDescription.innerHTML = data.deskripsi || data.description || '';
-
         }
 
-        // --- WEB SPEECH API (Text to Speech) ---
+        // WEB SPEECH API (Text to Speech) dengan Sistem Antrean Kalimat
         const voiceBtn = document.getElementById('voiceBtn');
         const voiceIcon = document.getElementById('voiceIcon');
         const voiceStatus = document.getElementById('voice-status');
 
         let isSpeaking = false;
-        updateVoiceUI();
+        let utteranceQueue = []; // Menyimpan potongan kalimat agar browser tidak crash
 
-        // Mengekstrak teks dari HTML
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = data.deskripsi || data.description || '';
-        const rawText = tempDiv.textContent || tempDiv.innerText || '';
+        function updateVoiceUI() {
+            if (isSpeaking) {
+                if (voiceIcon) voiceIcon.className = 'bi bi-pause-fill';
+                if (voiceStatus) voiceStatus.textContent = 'Bantuan Suara : Aktif';
+            } else {
+                if (voiceIcon) voiceIcon.className = 'bi bi-mic-fill';
+                if (voiceStatus) voiceStatus.textContent = 'Bantuan Suara : Nonaktif';
+            }
+        }
 
-        // Teks yang akan dibaca
-        const textToSpeak = `${data.title}. ${rawText}`;
+        // Fungsi rekursif untuk memutar antrean potongan teks satu per satu
+        function speakNextChunk() {
+            if (utteranceQueue.length === 0) {
+                isSpeaking = false;
+                updateVoiceUI();
+                return;
+            }
 
-        if ('speechSynthesis' in window) {
-            const toggleTTS = () => {
+            const textChunk = utteranceQueue.shift().trim();
+            if (!textChunk) {
+                speakNextChunk();
+                return;
+            }
+
+            const utterance = new SpeechSynthesisUtterance(textChunk);
+            utterance.lang = 'id-ID'; //bahasa indonesia
+
+            utterance.onend = () => {
                 if (isSpeaking) {
-                    window.speechSynthesis.cancel();
-                    isSpeaking = false;
-                    updateVoiceUI();
-                } else {
-                    const utterance = new SpeechSynthesisUtterance(textToSpeak);
-                    utterance.lang = 'id-ID'; // Bahasa Indonesia
-
-                    utterance.onend = () => {
-                        isSpeaking = false;
-                        updateVoiceUI();
-                    };
-
-                    utterance.onerror = (e) => {
-                        console.error('TTS Error:', e);
-                        isSpeaking = false;
-                        updateVoiceUI();
-                    };
-
-                    isSpeaking = true;
-                    updateVoiceUI();
-                    window.speechSynthesis.speak(utterance);
+                    speakNextChunk();
                 }
             };
 
-            voiceBtn.addEventListener('click', toggleTTS);
-            // Toast Konfirmasi Suara
+            utterance.onerror = (e) => {
+                console.error('TTS Chunk Error:', e);
+                stopTTS();
+            };
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function stopTTS() {
+            isSpeaking = false;
+            utteranceQueue = [];
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+            }
+            updateVoiceUI();
+        }
+
+        if ('speechSynthesis' in window) {
+            updateVoiceUI();
+
+            const toggleTTS = () => {
+                if (isSpeaking) {
+                    stopTTS();
+                } else {
+                    // Hentikan sisa pemutaran suara lain jika ada
+                    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+
+                    // Mengekstrak teks bersih dari tag HTML deskripsi
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = data.deskripsi || data.description || '';
+                    let rawText = tempDiv.textContent || tempDiv.innerText || '';
+
+                    // Bersihkan tabulasi dan spasi liar akibat format backtick template literal
+                    rawText = rawText.replace(/\s+/g, ' ').trim();
+
+                    const fullText = `${data.title || ''}. ${rawText}`;
+
+                    // Pecah teks panjang menjadi potongan kalimat berdasarkan tanda baca (. ! ?)
+                    utteranceQueue = fullText.split(/(?<=[.,!?])\s+/);
+
+                    isSpeaking = true;
+                    updateVoiceUI();
+                    speakNextChunk();
+                }
+            };
+
+            if (voiceBtn) {
+                voiceBtn.addEventListener('click', toggleTTS);
+            }
+
+            // --- Toast Konfirmasi Suara ---
             const voiceToastElement = document.getElementById('voiceToast');
             const enableVoiceBtn = document.getElementById('enableVoiceBtn');
             const disableVoiceBtn = document.getElementById('disableVoiceBtn');
 
             if (voiceToastElement) {
+                const voiceToast = new bootstrap.Toast(voiceToastElement, { autohide: false });
 
-                const voiceToast = new bootstrap.Toast(
-                    voiceToastElement,
-                    {
-                        autohide: false
-                    }
-                );
-
-                // Tampilkan toast saat halaman dibuka
+                // Tampilkan toast konfirmasi setelah halaman terbuka
                 setTimeout(() => {
                     voiceToast.show();
                 }, 500);
 
-                // Klik Ya
-                enableVoiceBtn.addEventListener('click', () => {
-                    voiceToast.hide();
+                // Klik tombol 'Ya' di Toast
+                if (enableVoiceBtn) {
+                    enableVoiceBtn.addEventListener('click', () => {
+                        voiceToast.hide();
+                        if (!isSpeaking) {
+                            toggleTTS();
+                        }
+                    });
+                }
 
-                    if (!isSpeaking) {
-                        toggleTTS();
-                    }
-                });
-
-                // Klik Tidak
-                disableVoiceBtn.addEventListener('click', () => {
-                    voiceToast.hide();
-                });
+                // Klik tombol 'Tidak' di Toast
+                if (disableVoiceBtn) {
+                    disableVoiceBtn.addEventListener('click', () => {
+                        voiceToast.hide();
+                    });
+                }
             }
-
-            // AUTO-PLAY: Langsung bacakan berita saat halaman terbuka.
-            // setTimeout(() => {
-            //     if (!isSpeaking) {
-            //         toggleTTS();
-            //     }
-            // }, 300);
 
         } else {
             console.warn("Speech Synthesis tidak didukung di browser ini.");
-            voiceBtn.style.display = 'none';
-            voiceStatus.textContent = "Suara tidak didukung";
-        }
-
-        function updateVoiceUI() {
-            if (isSpeaking) {
-                voiceIcon.className = 'bi bi-pause-fill';
-                voiceStatus.textContent = 'Bantuan Suara : Aktif';
-            } else {
-                voiceIcon.className = 'bi bi-mic-fill';
-                voiceStatus.textContent = 'Bantuan Suara : Nonaktif';
-            }
+            if (voiceBtn) voiceBtn.style.display = 'none';
+            if (voiceStatus) voiceStatus.textContent = "Suara tidak didukung";
         }
 
     } else {
@@ -195,7 +232,6 @@ document.addEventListener('DOMContentLoaded', () => {
             shareDropdown.classList.toggle('d-none');
         });
 
-        // Close dropdown when clicking outside
         document.addEventListener('click', (e) => {
             if (!shareBtn.contains(e.target) && !shareDropdown.contains(e.target)) {
                 shareDropdown.classList.add('d-none');
@@ -206,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (copyBtn && shareLink) {
         copyBtn.addEventListener('click', () => {
             shareLink.select();
-            shareLink.setSelectionRange(0, 99999); // Untuk mobile devices
+            shareLink.setSelectionRange(0, 99999); // Untuk mobile device
             navigator.clipboard.writeText(shareLink.value).then(() => {
                 const originalText = copyBtn.textContent;
                 copyBtn.textContent = 'Disalin!';
@@ -221,11 +257,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Ketika halaman ditinggalkan, matikan TTS
+    // Ketika halaman ditinggalkan atau di-refresh, matikan TTS secara total
     window.addEventListener('beforeunload', () => {
         if ('speechSynthesis' in window) {
             window.speechSynthesis.cancel();
         }
     });
-
 });
