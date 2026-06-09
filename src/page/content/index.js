@@ -27,7 +27,7 @@ content.innerHTML = `
   <div class="container my-5 fade-in">
     <div class="row g-4">
       <div class="col-lg-7 col-12">
-        <article class="featured-card">
+        <article class="featured-card" style="cursor:pointer" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=5'">
           <div class="position-relative overflow-hidden rounded-4 mb-3 image-featured-wrapper">
             <img src="/src/assets/newsAssets/arsenal-juara-liga-inggris-2025-2026.jpg" alt="Arsenal Juara" class="img-fluid w-100 featured-img">
             <span class="badge-category position-absolute top-0 start-0 m-3">Olahraga</span>
@@ -45,7 +45,7 @@ content.innerHTML = `
           <div class="text-custom">
             <h1 class="featured-title mb-3">Juara Premier League 2025/2026, Arsenal Raup Rp3,9 Triliun dari Liga Inggris</h1>
             <p class="featured-desc mb-2">Gelar juara The Gunners dipastikan setelah Manchester City hanya bermain imbang 1-1 melawan Bournemouth. Hasil itu membuat Arsenal tak lagi terkejar di puncak klasemen dengan koleksi 82 poin.</p>
-            <a href="#" class="fw-bold text-decoration-underline text-custom">Lihat Selengkapnya</a>
+            <span class="fw-bold text-decoration-underline text-custom">Lihat Selengkapnya</span>
           </div>
         </article>
       </div>
@@ -53,7 +53,7 @@ content.innerHTML = `
       <div class="col-lg-5 col-12 d-flex flex-column justify-content-between gap-4">
         <div class="news-side-list d-flex flex-column gap-3 mb-2">
           
-          <div class="news-side-item pb-3 border-bottom">
+          <div class="news-side-item pb-3 border-bottom" style="cursor:pointer" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=6'">
             <div class="row g-2 align-items-center">
               <div class="col-4 col-sm-3 col-lg-4">
                 <img src="/src/assets/newsAssets/persib-bandung-juara-liga-1-1748142161979_169.jpeg" alt="Persib Juara" class="img-fluid rounded-3 w-100 object-fit-cover img-news-right">
@@ -66,7 +66,7 @@ content.innerHTML = `
             </div>
           </div>
 
-          <div class="news-side-item pb-3 border-bottom">
+          <div class="news-side-item pb-3 border-bottom" style="cursor:pointer" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=7'">
             <div class="row g-2 align-items-center">
               <div class="col-4 col-sm-3 col-lg-4">
                 <img src="/src/assets/newsAssets/result_ChatGPT-Image-May-18-2026-08_05_59-AM-420x280.webp" alt="Bayern Munich" class="img-fluid rounded-3 w-100 object-fit-cover img-news-right">
@@ -79,7 +79,7 @@ content.innerHTML = `
             </div>
           </div>
 
-          <div class="news-side-item pb-3">
+          <div class="news-side-item pb-3" style="cursor:pointer" onclick="window.location.href='/src/page/structure/detailBerita.html?section=beritaIndex&index=8'">
             <div class="row g-2 align-items-center">
               <div class="col-4 col-sm-3 col-lg-4">
                 <img src="/src/assets/newsAssets/soccer-champions-psg-intreport-1748726157629_169.jpeg" alt="PSG Juara" class="img-fluid rounded-3 w-100 object-fit-cover img-news-right">

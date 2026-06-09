@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 category: item.category,
                 date: item.tanggal,
                 deskripsi: item.deskripsi,
+                Penulis: item.Penulis,
+                FotoProfile: item.FotoProfile,
             };
         }
     }

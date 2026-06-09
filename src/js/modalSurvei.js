@@ -10,7 +10,7 @@ function renderDanInisialisasiModal() {
                         <div class="d-flex">
                             <div class="justify-content-start">
                                 <h4><b>Pilih Preferensi Anda</b></h4>
-                                <p style="font-size: 12px; max-width: 300px;">Sesuaikan preferensi membaca Anda agar penjelajahan informasi pada platform ini terasa lebih ramah.</p>
+                                <p style="font-sizge: 12px; max-width: 300px;">Sesuaikan preferensi membaca Anda agar penjelajahan informasi pada platform ini terasa lebih ramah.</p>
                             </div>
                             <div class="justify-content-end ms-auto">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
