@@ -126,7 +126,7 @@ content.innerHTML = `
 
 
         <section class="source-info-section">
-            <p class="source-info">Sumber informasi berita :</p>
+            <p class="source--info">Sumber informasi berita :</p>
 
             <!-- Swiper -->
             <div class="swiper logo-swiper">
