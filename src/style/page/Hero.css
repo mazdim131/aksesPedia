@@ -1,8 +1,10 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--color-body-text);
   background-color: var(--bg-body);
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
   overflow-x: hidden;
   padding-top: 0;
 }
@@ -44,7 +46,9 @@ body {
 
 /* HERO SECTION — Konfigurasi Utama */
 .hero {
-  background: var(--color-primary), url('/src/assets/assetBeritaHero/HeroPalingAtas/FotoMekkah.jpg');
+  background:
+    var(--color-primary),
+    url("/src/assets/assetBeritaHero/HeroPalingAtas/FotoMekkah.jpg");
   background-blend-mode: multiply;
   /* bikin foto keliatan menyatu transparan dengan warna*/
   background-size: cover;
@@ -208,6 +212,10 @@ body {
   background-color: var(--color-accent);
 }
 
+.trending-item__number {
+  color: var(--color-body-text) !important;
+}
+
 .berita .d-flex.align-items-center.mb-4 {
   margin-bottom: 28px !important;
   padding-bottom: 12px;
@@ -270,7 +278,9 @@ body {
 
 /* BERITA SECTION — Cards */
 .card-berita {
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  transition:
+    transform var(--transition-smooth),
+    box-shadow var(--transition-smooth);
   background-color: var(--card-secondary-bg) !important;
   color: var(--color-body-text) !important;
   cursor: pointer;
@@ -304,12 +314,10 @@ body {
 .card-berita h5,
 .card-berita h6 {
   color: var(--color-body-text) !important;
+  line-height: 1.5 !important;
+  margin-bottom: 12px !important;
 }
 
-/* .card-berita h4 {
-  color: #ffffff !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
-} */
 
 .card-berita__img-container {
   position: relative;
@@ -334,7 +342,9 @@ body {
 
 .secondary-card {
   background-color: var(--card-secondary-bg) !important;
-  min-height: 400px;
+  min-height: 28rem; 
+  display: flex;
+  flex-direction: column;
 }
 
 .card-berita {
@@ -357,10 +367,11 @@ body {
 }
 
 .card-berita__body {
-  padding: 16px;
+padding: 16px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-berita .btn-mulai,
@@ -376,7 +387,6 @@ body {
   padding: 0;
   cursor: pointer;
   transition: opacity var(--transition-smooth);
-
 }
 
 .card-berita .btn-mulai:hover,
@@ -417,7 +427,9 @@ body {
   font-size: 22px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  transition:
+    transform var(--transition-smooth),
+    box-shadow var(--transition-smooth);
   gap: 2px;
 }
 
@@ -557,7 +569,7 @@ body {
     gap: 15px;
   }
 
-  .trending-item:nth-child(n+3) {
+  .trending-item:nth-child(n + 3) {
     display: none !important;
   }
 
@@ -610,7 +622,7 @@ body {
     border-radius: 0 !important;
   }
 
-  .card-reaksi>div:last-child {
+  .card-reaksi > div:last-child {
     padding: 15px;
   }
 

@@ -76,17 +76,14 @@ function renderHero() {
 }
 
 function renderTrending() {
-  const trendingList = document.getElementById("trending-list");
-  if (!trendingList || !newsData.trending) return;
-
-  trendingList.innerHTML = newsData.trending
-    .map(
-      (item, index) => `
-        <div class="trending-item d-flex align-items-start gap-3 py-2" style="cursor: pointer;" onclick="goToDetail('trending', ${index})">
-            <span class="trending-item__number h3 fw-bold text-light-emphasis opacity-25">${item.number}</span>
-            <div>
-                <h4 class="trending-item__title h6 mb-1 small fw-bold">${item.title}</h4>
-                <span class="trending-item__category small fw-bold">${item.category}</span>
+    const trendingList = document.getElementById('trending-list');
+    trendingList.innerHTML = newsData.trending.map((item, index) => `
+            <div class="trending-item d-flex align-items-start gap-3 py-2" style="cursor: pointer;" onclick="goToDetail('trending', ${index})">
+                <span class="trending-item__number h3 fw-bold">${item.number}</span>
+                <div>
+                    <h4 class="trending-item__title h6 mb-1 small fw-bold">${item.title}</h4>
+                    <span class="trending-item__category small fw-bold">${item.category}</span>
+                </div>
             </div>
         </div>
     `,
@@ -172,7 +169,7 @@ function renderBeritaInklusif() {
                             <span class="card-berita__date-badge">${item.date}</span>
                         </div>
                         <div class="p-3 flex-grow-1 d-flex flex-column">
-                            <h4 class="h6 fw-bold mb-2 small" style="height: 40px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${item.title}</h4>
+                            <h4 class="h6 fw-bold mb-2 small" style="height: 50px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${item.title}</h4>
                             <p class="small text-muted mb-3" style="font-size: 0.78rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${item.description}</p>
                             <div class="mt-auto">
                                 <button class="btn-mulai" aria-label="Dengarkan berita" onclick="event.stopPropagation(); window.togglePlayer(this)" data-section="beritaInklusif_grid" data-index="${index}">
