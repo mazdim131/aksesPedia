@@ -1,9 +1,15 @@
 const content = document.getElementById("main");
+
 content.innerHTML = `
-        <div class="contact-container">
+    <div class="contact-container">
         <div class="main-card">
 
             <div class="form-section">
+                <!-- TOMBOL BACK DI SINI -->
+                <button type="button" class="btn-back" onclick="history.back()">
+                    ← Kembali
+                </button>
+
                 <div class="header-form">
                     <a href="/index.html">
                         <img class="logo-aksespedia" src="https://c.animaapp.com/mpm845f798Vnt1/img/image-109.png" alt="Logo" />
