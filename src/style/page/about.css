@@ -34,14 +34,14 @@ img {
 .main-headline {
   font-size: 36px;
   font-weight: 500;
-  color: #000000;
+  color: var(--color-body-text);
   margin-bottom: 20px;
 }
 
 .main-tagline {
   font-size: 18px;
   font-weight: 400;
-  color: #000000;
+  color: var(--color-body-text);
   max-width: 850px;
   margin: 0 auto 40px;
   line-height: 1.5;
@@ -81,6 +81,7 @@ img {
 }
 
 .stat-number {
+  padding-top: 30px;
   font-size: 48px;
   font-weight: 700;
   line-height: 1;
@@ -227,6 +228,13 @@ img {
   color: #ffffff;
 }
 
+.source--info {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color-body-text);
+  margin-bottom: 20px;
+}
+
 /* animasi kertas */
 @keyframes melambai-green {
   0% { transform: rotate(8deg) translateY(3px) skewX(0deg); }
@@ -339,6 +347,7 @@ img {
   font-weight: 400;
   color: #010101;
   line-height: 1.6;
+  color: var(--color-body-text);
 }
 
 .faq-list {

@@ -1,6 +1,6 @@
  const content = document.getElementById("main");
 content.innerHTML = `
-        <section class="hero-section">
+        <section class="hero-section mt-5">
             <h1 class="main-headline">Sekilas Tentang Kami</h1>
             <p class="main-tagline">Kami hadir di tengah arus informasi untuk menyajikan berita cepat, akurat, dan
                 terpercaya.</p>
@@ -122,7 +122,7 @@ content.innerHTML = `
 
 
         <section class="source-info-section">
-            <p class="source-info">Sumber informasi berita :</p>
+            <p class="source--info">Sumber informasi berita :</p>
 
             <!-- Swiper -->
             <div class="swiper logo-swiper">
