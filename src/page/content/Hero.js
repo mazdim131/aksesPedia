@@ -226,7 +226,6 @@ function initPlayerControls() {
         }
 
         const textChunk = utteranceQueue.shift().trim();
-        // Lewati jika potongan teks kosong
         if (!textChunk) {
             speakNextChunk(btn);
             return;
@@ -274,7 +273,6 @@ function initPlayerControls() {
             // Matikan suara lain yang sedang berjalan
             stopTTS();
 
-            // Aktifkan UI Putar berita
             setUIPlay(btn);
             currentPlayingBtn = btn;
 
@@ -283,7 +281,7 @@ function initPlayerControls() {
                 const index = btn.dataset.index;
                 let data = null;
 
-                // Ambil data berdasarkan section tombol
+                // Ambil data dari tombol yang di click
                 if (section === 'hero_main') data = newsData.hero;
                 else if (section === 'beritaInklusif_featured') data = newsData.beritaInklusif.featured;
                 else if (section === 'beritaInklusif_secondary') data = newsData.beritaInklusif.secondary;
@@ -305,13 +303,11 @@ function initPlayerControls() {
                     isSpeaking = true;
                     speakNextChunk(btn);
                 } else {
-                    // Jika data tidak ditemukan, balikkan UI ke awal
                     setTimeout(() => setUIStop(btn), 500);
                 }
             }
         }
     };
 
-    // Ketika halaman ditinggalkan atau di-refresh, matikan suara otomatis
     window.addEventListener('beforeunload', () => stopTTS());
 }
