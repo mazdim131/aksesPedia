@@ -391,9 +391,10 @@ img {
 }
 
 .image-woman-phone {
+  display: none;
   width: 100%;
-  max-width: 400px;
-  height: 200px;
+  max-width: 500px;
+  height: 600px;
   object-fit: contain;
 }
 
@@ -662,6 +663,7 @@ img {
   }
 
   .image-woman-phone {
+    display: block;
     width: 500px;
     height: 600px;
     object-fit: contain;
