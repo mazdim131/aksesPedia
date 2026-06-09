@@ -229,10 +229,16 @@ img {
 }
 
 .source--info {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--color-body-text);
   margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .source--info {
+    font-size: 28px;
+  }
 }
 
 /* animasi kertas */
@@ -494,6 +500,84 @@ img {
   object-fit: contain;
 }
 
+@media (min-width: 768px) {
+  .about-container {
+    padding: 0 30px;
+  }
+
+  .main-headline {
+    font-size: 38px;
+  }
+
+  .main-tagline {
+    font-size: 17px;
+  }
+
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+
+  .bento-grid .bento-item {
+    min-height: 180px;
+  }
+
+  .stat-number {
+    font-size: 42px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 700px;
+  }
+
+  .feature-card {
+    padding-top: 80px;
+    min-height: 240px;
+  }
+
+  .quotes-container {
+    gap: 25px;
+  }
+
+  .quote-card {
+    max-width: 300px;
+    min-height: 260px;
+  }
+
+  .card-green { transform: rotate(3deg); }
+  .card-orange { transform: rotate(-3deg); }
+
+  .faq-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .cta-section {
+    flex-direction: row;
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .cta-content h2 {
+    font-size: 28px;
+  }
+
+  .image-woman-phone {
+    display: block;
+    width: 200px;
+    height: 280px;
+    object-fit: contain;
+  }
+
+  .source--info {
+    font-size: 28px;
+  }
+}
+
 @media (min-width: 1024px) {
   .about-container {
     padding: 0 40px;
@@ -515,12 +599,12 @@ img {
   }
 
   .main-headline {
-    font-size: 38px;
+    font-size: 44px;
     margin-bottom: 12px;
   }
 
   .main-tagline {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 30px;
     max-width: 750px;
   }
@@ -564,22 +648,22 @@ img {
   }
 
   .section-title {
-    font-size: 38px;
+    font-size: 44px;
     margin-bottom: 10px;
   }
 
   .section-subtitle {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 30px;
   }
 
   .features-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    margin-top: 40px; 
+    margin-top: 40px;
+    max-width: 1240px;
   }
 
- 
   .feature-card {
     padding: 40px 20px 30px;
     width: auto;
@@ -604,12 +688,12 @@ img {
   }
 
   .quotes-heading {
-    font-size: 38px;
+    font-size: 44px;
     margin-bottom: 10px;
   }
 
   .quotes-subheading {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 30px;
     padding: 8px 16px;
   }
@@ -645,12 +729,12 @@ img {
   }
 
   .faq-title {
-    font-size: 38px;
+    font-size: 44px;
     margin-bottom: 15px;
   }
 
   .faq-desc {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .faq-item {
@@ -669,7 +753,7 @@ img {
   }
 
   .cta-content h2 {
-    font-size: 44px; 
+    font-size: 54px; 
     margin-bottom: 20px;
   }
 
@@ -680,6 +764,10 @@ img {
 
   .source-info {
     font-size: 24px !important; 
+  }
+
+  .source--info {
+    font-size: 32px;
   }
 
   .image-woman-phone {
@@ -695,6 +783,6 @@ img {
 }
 
 @media (min-width: 1440px) {
-  .cta-content h2 { font-size: 54px; }
-  .main-headline, .section-title, .quotes-heading, .faq-title { font-size: 44px; }
+  .cta-content h2 { font-size: 60px; }
+  .main-headline, .section-title, .quotes-heading, .faq-title { font-size: 52px; }
 }

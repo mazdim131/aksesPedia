@@ -35,6 +35,8 @@
   --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
   --shadow-card-hover: 0 12px 28px rgba(0, 0, 0, 0.12);
   --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --border-input-contact: black;
 }
 
 [data-theme="deuteranomali"] {
@@ -59,6 +61,8 @@
   --card-secondary-bg: #1a4a7a;
   --card-reaksi-hover: rgba(255, 255, 255, 0.06);
   --card-reaksi-date: rgba(255, 255, 255, 0.5);
+
+  --border-input-contact: #06152d;
 }
 
 [data-theme="protanomali"],
@@ -84,6 +88,8 @@
   --card-secondary-bg: #1a5580;
   --card-reaksi-hover: rgba(255, 255, 255, 0.06);
   --card-reaksi-date: rgba(255, 255, 255, 0.5);
+
+  --border-input-contact: #06152d;
 }
 
 [data-theme="deuteranopia"] {
@@ -108,6 +114,8 @@
   --card-secondary-bg: #0a3570;
   --card-reaksi-hover: rgba(255, 255, 255, 0.06);
   --card-reaksi-date: rgba(255, 255, 255, 0.5);
+
+  --border-input-contact: #06152d;
 }
 
 [data-theme="tritanopia"] {
@@ -132,6 +140,8 @@
   --card-secondary-bg: #f0e0cc;
   --card-reaksi-hover: #f5eee5;
   --card-reaksi-date: #8a6040;
+
+  --border-input-contact: #5c2e2e;
 }
 
 .kotak-warna {
