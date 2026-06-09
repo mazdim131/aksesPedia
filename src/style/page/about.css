@@ -81,6 +81,7 @@ img {
 }
 
 .stat-number {
+  padding-top: 30px;
   font-size: 48px;
   font-weight: 700;
   line-height: 1;

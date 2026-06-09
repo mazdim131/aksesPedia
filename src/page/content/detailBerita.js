@@ -21,6 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
         data = newsData.beritaInklusif.grid[index];
     } else if (section === 'pilihanRedaksi' && index !== null) {
         data = newsData.pilihanRedaksi[index];
+    } else if (section === 'beritaIndex' && index !== null) {
+        const item = newsData.swiper[index];
+        if (item) {
+            data = {
+                image: item.fotoSampul,
+                title: item.title,
+                category: item.category,
+                date: item.tanggal,
+                deskripsi: item.deskripsi,
+                Penulis: item.Penulis,
+                FotoProfile: item.FotoProfile,
+            };
+        }
     }
 
     if (data) {

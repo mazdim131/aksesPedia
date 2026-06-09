@@ -1,4 +1,4 @@
-const newsData = {
+var newsData = {
   hero: {
     // paling atas
     tag: "Haji 2026",
