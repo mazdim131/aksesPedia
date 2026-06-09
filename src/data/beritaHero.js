@@ -13,8 +13,6 @@ var newsData = {
       Setiap tahun, jutaan umat Muslim dari seluruh dunia berkumpul di Mekkah untuk melaksanakan ibadah haji, salah satu rukun Islam yang wajib dipenuhi. Momen sakral ini menjadi kesempatan bagi para jemaah untuk mendekatkan diri kepada Allah SWT, memohon ampunan, serta memperkuat keimanan. Prosesi haji yang berlangsung selama beberapa hari melibatkan serangkaian ritual yang penuh makna dan spiritualitas.
     </p>
 
-<<<<<<< HEAD
-=======
     <h2>Persiapan Menuju Tanah Suci</h2>
 
     <p>
@@ -54,7 +52,6 @@ var newsData = {
     <p>
       Pengalaman beribadah di Tanah Suci sering kali menjadi motivasi bagi jemaah untuk menjadi pribadi yang lebih baik, lebih sabar, dan lebih peduli terhadap sesama. Kisah-kisah inspiratif dari para jemaah haji terus menginspirasi banyak orang untuk mempersiapkan diri dan berusaha melaksanakan ibadah haji suatu saat nanti.
     </p`,
->>>>>>> 22a8696c52450a9422579edfd581f411f5298c9f
     // ini yang di bawah tranding paling atas // sub berita
     subNews: [
       {
