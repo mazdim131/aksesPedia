@@ -1,24 +1,8 @@
-:root {
-  --color-primary: #1A3C6E;
-  --color-accent: #E63946;
-  --color-white: #FFFFFF;
-  --color-bg: #ff0000;
-  --color-text: #1A1A2E;
-  --color-text-muted: #6B7280;
-  --color-border: #E5E7EB;
-  --color-card-bg: #FFFFFF;
-  --bg-element: #111e31;
-  --color-teks: #ffffff;
-  --radius-card: 16px;
-  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
-  --shadow-card-hover: 0 12px 28px rgba(0, 0, 0, 0.12);
-  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: var(--color-body-text);
+  background-color: var(--bg-body);
+  transition: background-color 0.4s ease, color 0.4s ease;
   overflow-x: hidden;
   padding-top: 0;
 }
@@ -54,21 +38,18 @@ body {
   margin-top: 2px !important;
 }
 
-
 .footer-top {
   align-items: center !important;
 }
 
-
-
-
 /* HERO SECTION — Konfigurasi Utama */
 .hero {
-  background: linear-gradient(rgba(11, 29, 51, 0.96), rgba(11, 29, 51, 0.96)),
-    url('/src/assets/assetBeritaHero/HeroPalingAtas/FotoMekkah.jpg');
+  background: var(--color-primary), url('/src/assets/assetBeritaHero/HeroPalingAtas/FotoMekkah.jpg');
+  background-blend-mode: multiply;
+  /* bikin foto keliatan menyatu transparan dengan warna*/
   background-size: cover;
   background-position: center;
-  color: var(--color-white);
+  color: white;
   padding-top: 60px;
   margin-top: 20px;
   border-radius: 30px;
@@ -86,7 +67,7 @@ body {
 .hero__tag {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #ff3b3b !important;
+  color: var(--color-accent) !important;
   margin-bottom: 8px !important;
   text-transform: none;
 }
@@ -96,21 +77,21 @@ body {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px !important;
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 
 .hero__desc {
   font-size: 1rem;
   line-height: 1.6;
   max-width: 450px;
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: var(--hero-desc-color) !important;
   margin-bottom: 30px !important;
 }
 
 .hero__btn-play {
   width: 64px;
   height: 64px;
-  background: #ff3b3b;
+  background: var(--color-accent);
   border: none;
   border-radius: 50%;
   display: flex;
@@ -120,13 +101,21 @@ body {
   font-size: 28px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(255, 59, 59, 0.3);
+  box-shadow: 0 8px 25px var(--hero-btn-shadow);
 }
 
 .hero__btn-play:hover {
   transform: scale(1.1);
-  background: #e63535;
-  box-shadow: 0 10px 30px rgba(255, 59, 59, 0.4);
+  background: var(--color-accent-hover);
+  box-shadow: 0 10px 30px var(--hero-btn-shadow-hover);
+}
+
+.hero__btn-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--hero-label-color);
+  margin-top: 6px;
+  font-weight: 600;
 }
 
 .hero__image-wrap {
@@ -144,7 +133,7 @@ body {
 }
 
 .hero__links {
-  background: rgba(10, 25, 47, 0.3);
+  background: var(--hero-links-bg);
   backdrop-filter: blur(10px);
 }
 
@@ -159,7 +148,6 @@ body {
   cursor: pointer;
 }
 
-
 .hero-link::after {
   content: "";
   position: absolute;
@@ -167,7 +155,7 @@ body {
   top: 25%;
   height: 50%;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--hero-link-divider);
   border-right: 2px solid white;
 }
 
@@ -175,9 +163,8 @@ body {
   display: none;
 }
 
-
 .hero-link:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--hero-link-hover-bg);
 }
 
 .hero-link__title {
@@ -185,16 +172,15 @@ body {
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 6px !important;
-  color: #ffffff;
+  color: var(--hero-title-color);
 }
 
 .hero-link__category {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #ff3b3b !important;
+  color: var(--color-accent) !important;
   text-transform: none;
 }
-
 
 /* TRENDING SECTION */
 .trending {
@@ -219,13 +205,13 @@ body {
   bottom: 0;
   width: 60px;
   height: 3px;
-  background-color: #333;
+  background-color: var(--color-accent);
 }
 
 .berita .d-flex.align-items-center.mb-4 {
   margin-bottom: 28px !important;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-accent);
 }
 
 .berita .d-flex.align-items-center.mb-4 h3 {
@@ -263,17 +249,20 @@ body {
   overflow: hidden;
 }
 
+.trending-item__category {
+  color: var(--color-accent) !important;
+}
 
 /* TAGLINE SECTION */
 .tagline {
-  background-color: #fcfcfc;
+  background-color: transparent;
+  color: var(--color-body-text);
   padding: 50px 20px;
 }
 
 .tagline__title {
-  color: var(--color-text);
+  color: var(--color-body-text);
 }
-
 
 .berita {
   padding: 50px 20px;
@@ -282,6 +271,8 @@ body {
 /* BERITA SECTION — Cards */
 .card-berita {
   transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  background-color: var(--card-secondary-bg) !important;
+  color: var(--color-body-text) !important;
   cursor: pointer;
   height: 100%;
   border-radius: var(--radius-card);
@@ -291,6 +282,34 @@ body {
   transform: translateY(-4px);
   box-shadow: var(--shadow-card-hover);
 }
+
+.berita_inklusif_duakolom {
+  color: var(--color-card-text) !important;
+}
+
+.card-berita p.text-muted {
+  color: var(--color-body-text) !important;
+  opacity: 0.85;
+}
+
+.card-berita .btn-mulai {
+  color: var(--color-body-text) !important;
+}
+
+.card-berita .btn-mulai .icon-circle {
+  background: var(--color-accent) !important;
+  color: white !important;
+}
+
+.card-berita h5,
+.card-berita h6 {
+  color: var(--color-body-text) !important;
+}
+
+/* .card-berita h4 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+} */
 
 .card-berita__img-container {
   position: relative;
@@ -310,12 +329,16 @@ body {
 }
 
 .featured-overlay .overlay-content {
-  background: linear-gradient(transparent 30%, rgba(0, 0, 0, 0.85));
+  background: var(--overlay-gradient);
 }
 
 .secondary-card {
-  background-color: #f0f0f0 !important;
+  background-color: var(--card-secondary-bg) !important;
   min-height: 400px;
+}
+
+.card-berita {
+  background-color: var(--card-secondary-bg) !important;
 }
 
 .card-berita__date-badge {
@@ -323,7 +346,7 @@ body {
   bottom: 12px;
   left: 12px;
   background: white;
-  color: var(--color-text);
+  color: var(--bg-card);
   font-size: 0.65rem;
   font-weight: 700;
   padding: 5px 10px;
@@ -347,12 +370,13 @@ body {
   gap: 10px;
   font-size: 0.82rem;
   font-weight: 700;
-  color: var(--bg-element);
+  color: var(--bg-card);
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   transition: opacity var(--transition-smooth);
+
 }
 
 .card-berita .btn-mulai:hover,
@@ -363,7 +387,7 @@ body {
 .icon-circle {
   width: 34px;
   height: 34px;
-  background: var(--bg-element);
+  background: var(--color-accent);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -382,16 +406,19 @@ body {
 .btn-mulai-large {
   width: 56px;
   height: 56px;
-  background: var(--bg-element);
+  background: var(--color-accent);
   border: none;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-size: 22px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  gap: 2px;
 }
 
 .btn-mulai-large:hover {
@@ -403,10 +430,16 @@ body {
   font-style: normal;
   line-height: 1;
   display: block;
+  font-size: 22px;
 }
 
+.btn-mulai-large span {
+  font-size: 0.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
 
-/* PILIHAN REDAKSI — Sidebar Cards */
+/* PILIHAN REDAKSI*/
 .card-reaksi {
   transition: background var(--transition-smooth);
   cursor: pointer;
@@ -414,7 +447,7 @@ body {
 }
 
 .card-reaksi:hover {
-  background: #f5f6f8;
+  background: var(--card-reaksi-hover);
 }
 
 .card-reaksi__img {
@@ -434,7 +467,7 @@ body {
 
 .card-reaksi__date {
   font-size: 0.72rem;
-  color: #999;
+  color: var(--card-reaksi-date);
   font-weight: 500;
   margin-bottom: 3px !important;
   display: block;
@@ -445,14 +478,35 @@ body {
   line-height: 1.4;
   font-weight: 700;
   margin-top: 2px;
-  color: var(--color-text);
+  color: var(--color-body-text);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
+/* --- Tablet (max 992px) --- */
+@media (max-width: 992px) {
+  .trending__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 
-/* RESPONSIVE — Mobile (max 768px) */
+  .reaksi__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-link {
+    border-right: none !important;
+  }
+
+  .hero-link::after {
+    display: none !important;
+  }
+}
+
+/* --- Mobile (max 768px) --- */
 @media (max-width: 768px) {
   body {
     padding-left: 10px !important;
@@ -486,8 +540,6 @@ body {
     margin: 10px !important;
     border-radius: 20px;
     overflow: hidden;
-    /* background-color: #ffffff; */
-    /* border: 1px solid #f0f0f0; */
   }
 
   .hero__inner {
@@ -498,7 +550,6 @@ body {
     font-size: 2.2rem !important;
     margin-bottom: 15px !important;
   }
-
 
   /* Trending: hanya munculkan item 1 & 2 */
   .trending__list {
@@ -512,7 +563,6 @@ body {
 
   .hero-link {
     border-right: none !important;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important; */
     min-height: auto;
     padding: 18px 20px;
   }
@@ -551,9 +601,7 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 16px;
     padding: 0 !important;
-    /* border: 1px solid #f0f0f0 !important; */
     overflow: hidden;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
   }
 
   .card-reaksi__img {
@@ -566,9 +614,7 @@ body {
     padding: 15px;
   }
 
-
   footer {
-    /* padding: 30px 30px !important; */
     border-radius: 30px !important;
     margin: 10px !important;
     width: auto !important;
@@ -588,27 +634,5 @@ body {
 
   .social-icons {
     justify-content: flex-start !important;
-  }
-}
-
-/* --- Tablet (max 992px) --- */
-@media (max-width: 992px) {
-  .trending__list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .reaksi__list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .hero-link {
-    border-right: none !important;
-  }
-
-  .hero-link::after {
-    display: none !important;
   }
 }

@@ -47,10 +47,10 @@
 
                 <div class="detail-content-card">
                     <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
-                        <h4 class="mb-0 text-white fw-bold">Kategori <span id="detailCategory"
+                        <h4 class="mb-0 fw-bold">Kategori <span id="detailCategory"
                                 class="text-danger fw-normal"></span></h4>
                         <div class="voice-assistant-toggle d-flex align-items-center">
-                            <span class="me-2 text-white small fw-semibold" id="voice-status">Bantuan Suara :
+                            <span class="me-2 small fw-semibold" id="voice-status">Bantuan Suara :
                                 NonAktif</span>
                             <button class="btn btn-light rounded-circle voice-btn" id="voiceBtn"
                                 aria-label="Aktifkan Suara">
@@ -60,7 +60,7 @@
                     </div>
 
                     <!-- Title -->
-                    <h1 id="detailTitle" class="detail-title fw-bold text-white mb-4"></h1>
+                    <h1 id="detailTitle" class="detail-title fw-bold mb-4"></h1>
 
                     <!-- Author & Share -->
                     <div
@@ -69,8 +69,11 @@
                             <img id="detailAuthorImg" src="https://smkwikrama.sch.id/assets2/wikrama-logo.png"
                                 alt="Author" class="author-img rounded-circle me-3">
                             <div>
-                                <div class="author-name text-white small" id="detailAuthorName">By SMK Wikrama Bogor</div>
-                                <div class="author-date text-white-50 small" id="detailDate"></div>
+                                <div class="author-name small">By <span id="detailAuthorName">Penulis</span>
+                                </div>
+                                <div class="author-date small" id="detailDate"></div>
+                                <div class="author-name small" id="detailAuthorName"></div>
+                                <div class="author-date small" id="detailDate"></div>
                             </div>
                         </div>
 
@@ -80,18 +83,17 @@
                             </button>
                             <!-- Share Dropdown -->
                             <div class="share-dropdown d-none" id="shareDropdown">
-                                <div class="text-white small mb-2">Bagikan Halaman Ini</div>
+                                <div class="small mb-2">Bagikan Halaman Ini</div>
                                 <div class="d-flex gap-3 mb-3">
-                                    <a href="#" class="text-white share-icon"><i class="bi bi-instagram"></i></a>
-                                    <a href="#" class="text-white share-icon"><i class="bi bi-facebook"></i></a>
-                                    <a href="#" class="text-white share-icon"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#" class="share-icon"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="share-icon"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="share-icon"><i class="bi bi-whatsapp"></i></a>
                                 </div>
-                                <div class="text-white small mb-1">Bagikan Link Ini</div>
+                                <div class="small mb-1">Bagikan Link Ini</div>
                                 <div class="input-group input-group-sm">
-                                    <input type="text"
-                                        class="form-control copy-input bg-transparent text-white border-secondary"
+                                    <input type="text" class="form-control copy-input bg-transparent border-secondary"
                                         value="" id="shareLink" readonly>
-                                    <button class="btn copy-btn text-white fw-semibold mx-3" id="copyBtn">Salin</button>
+                                    <button class="btn copy-btn fw-semibold mx-3" id="copyBtn">Salin</button>
                                 </div>
                             </div>
                         </div>
@@ -121,11 +123,11 @@
                     <div class="toast-body">
                         Aktifkan mode suara untuk membacakan berita?
                         <div class="mt-3 d-flex justify-content-end gap-2">
-                            <button class="btn btn-success btn-sm" id="enableVoiceBtn">
+                            <button class="btn btn-sm" id="enableVoiceBtn">
                                 <i class="bi bi-mic-fill"></i>
                             </button>
 
-                            <button class="btn btn-secondary btn-sm" id="disableVoiceBtn" data-bs-dismiss="toast">
+                            <button class="btn btn-sm" id="disableVoiceBtn" data-bs-dismiss="toast">
                                 <i class="bi bi-mic-mute-fill"></i>
                             </button>
                         </div>
