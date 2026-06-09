@@ -8,6 +8,32 @@
   --icon-play: #06152d;
 
   --color-icon-about: black;
+
+  /* HERO VARIABLES */
+  --color-primary: linear-gradient(135deg, #1A3C6E 0%, #2B6CB0 100%);
+  --color-accent: #ff3b3b;
+  --color-accent-hover: #e63535;
+  --hero-title-color: #ffffff;
+  --hero-desc-color: rgba(255, 255, 255, 0.8);
+  --hero-label-color: rgba(255, 255, 255, 0.7);
+  --hero-links-bg: rgba(10, 25, 47, 0.3);
+  --hero-link-hover-bg: rgba(255, 255, 255, 0.08);
+  --hero-link-divider: rgba(255, 255, 255, 0.3);
+  --hero-btn-shadow: rgba(255, 59, 59, 0.3);
+  --hero-btn-shadow-hover: rgba(255, 59, 59, 0.4);
+  --card-secondary-bg: #f0f0f0;
+  --card-reaksi-hover: #f5f6f8;
+  --card-reaksi-date: #999;
+  --overlay-gradient: linear-gradient(transparent 30%, rgba(0, 0, 0, 0.85));
+
+  /* Card & UI Component Utilities */
+  --color-text-muted: #6B7280;
+  --color-border: #E5E7EB;
+  --color-card-bg: #FFFFFF;
+  --radius-card: 16px;
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 12px 28px rgba(0, 0, 0, 0.12);
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme="deuteranomali"] {
@@ -20,6 +46,16 @@
   --icon-play: #06152d;
 
   --color-icon-about: white;
+
+  /* HERO VARIABLES */
+  --color-primary: linear-gradient(135deg, #1A3C6E 0%, #2B6CB0 100%);
+  --color-accent: #ff3b3b;
+  --color-accent-hover: #e63535;
+  --hero-btn-shadow: rgba(255, 59, 59, 0.3);
+  --hero-btn-shadow-hover: rgba(255, 59, 59, 0.4);
+  --card-secondary-bg: #1a4a7a;
+  --card-reaksi-hover: rgba(255, 255, 255, 0.06);
+  --card-reaksi-date: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="protanomali"],
@@ -33,6 +69,16 @@
   --icon-play: #06152d;
 
   --color-icon-about: white;
+
+  /* HERO VARIABLES */
+  --color-primary: linear-gradient(135deg, #8CC8F0 0%, #5FA8D3 100%);
+  --color-accent: #FFD43B;
+  --color-accent-hover: #F4C430;
+  --hero-btn-shadow: rgba(255, 212, 59, 0.35);
+  --hero-btn-shadow-hover: rgba(255, 212, 59, 0.5);
+  --card-secondary-bg: #1a5580;
+  --card-reaksi-hover: rgba(255, 255, 255, 0.06);
+  --card-reaksi-date: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="deuteranopia"] {
@@ -45,6 +91,16 @@
   --icon-play: #06152d;
 
   --color-icon-about: white;
+
+  /* Hero variables */
+  --color-primary: linear-gradient(135deg, #1F6FFF 0%, #0052CC 100%);
+  --color-accent: #FF8A00;
+  --color-accent-hover: #E67700;
+  --hero-btn-shadow: rgba(255, 138, 0, 0.35);
+  --hero-btn-shadow-hover: rgba(255, 138, 0, 0.5);
+  --card-secondary-bg: #0a3570;
+  --card-reaksi-hover: rgba(255, 255, 255, 0.06);
+  --card-reaksi-date: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme="tritanopia"] {
@@ -57,6 +113,16 @@
   --icon-play: white;
 
   --color-icon-about: black;
+
+  /* Hero variables */
+  --color-primary: linear-gradient(135deg, #FFF2B3 0%, #FFE082 100%);
+  --color-accent: #8B4513;
+  --color-accent-hover: #6D3410;
+  --hero-btn-shadow: rgba(139, 69, 19, 0.35);
+  --hero-btn-shadow-hover: rgba(139, 69, 19, 0.5);
+  --card-secondary-bg: #f0e0cc;
+  --card-reaksi-hover: #f5eee5;
+  --card-reaksi-date: #8a6040;
 }
 
 .kotak-warna {
