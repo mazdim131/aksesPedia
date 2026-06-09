@@ -15,6 +15,7 @@ bilahNavigasi.innerHTML = `
         <div class="collapse navbar-collapse" id="menuNavigasi">
           <ul class="navbar-nav ms-auto align-items-center gap-3 mt-4 mt-lg-0 w-100 justify-content-lg-end text-center">
             <li class="nav-item"><a class="nav-link text-white fw-bold" href="/index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/Hero.html">Berita</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/about.html">Tentang Kami</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="/src/page/structure/contact.html">Hubungi Kami</a></li>
             
